@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  overflow: auto;
+  font-size: 20px;
+}
+html {
+  height: 100%;
+  padding: 0.2rem;
+  border: 2px solid red;
+}
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: space-around;
+  width: 100%;
+  border: 2px solid red;
+  min-height: 4rem;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.logo {
+  width: 4rem;
+  aspect-ratio: 1/1;
+  margin-right: 1rem;
+}
+.lema {
+  color: rgb(187, 46, 132);
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.li-nav {
+  list-style: none;
+  margin: 0.5rem;
+  align-self: center;
+  height: 100%;
+}
+.li-nav:hover {
+  color: red;
+}
+.carrito::before {
+  display: inline-block;
+  content: url(./img/cart-shopping.svg);
+  width: 1rem;
+  height: 1rem;
+  filter: brightness(0) saturate(100%) hue-rotate(0deg) invert(0%) sepia(100%);
+}
+.carrito:hover {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
