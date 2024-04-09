@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  overflow: auto;
   font-size: 20px;
 }
 html {
@@ -14,35 +13,41 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  justify-content: space-around;
   width: 100%;
-  border: 2px solid red;
+  padding: 0.5rem;
   min-height: 4rem;
+  justify-content: space-around;
   align-items: center;
 }
-
 .logo-container {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
 .logo {
-  width: 4rem;
-  aspect-ratio: 1/1;
-  margin-right: 1rem;
+  width: 3rem;
 }
 .lema {
-  color: rgb(187, 46, 132);
+  margin-left: 1rem;
+  color: rgb(55, 0, 255);
 }
-ul {
+nav {
+  width: fit-content;
+}
+.ul-nav {
   display: flex;
-  flex-wrap: wrap;
+  padding: 0;
+  width: fit-content;
 }
 .li-nav {
   list-style: none;
   margin: 0.5rem;
   align-self: center;
   height: 100%;
+  width: fit-content;
+}
+a {
+  font-size: 1rem;
 }
 .li-nav:hover {
   color: red;
@@ -52,7 +57,6 @@ ul {
   content: url(./img/cart-shopping.svg);
   width: 1rem;
   height: 1rem;
-  filter: brightness(0) saturate(100%) hue-rotate(0deg) invert(0%) sepia(100%);
 }
 .carrito:hover {
   cursor: pointer;
@@ -60,4 +64,39 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+.burger {
+  display: none;
+  width: 2rem;
+  min-width: 2rem;
+}
+.burger {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .active {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    color: blue;
+    padding: 0;
+    transition: opacity 1s ease;
+  }
+  .burger {
+    display: block;
+  }
+  header {
+    justify-content: space-between;
+  }
+  .ul-nav {
+    display: flex;
+    visibility: hidden;
+    width: fit-content;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  .lema {
+    display: none;
+  }
 }
