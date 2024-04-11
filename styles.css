@@ -49,7 +49,7 @@ a {
 .li-nav:hover {
   color: red;
 }
-.carrito::before {
+.carrito {
   display: inline-block;
   content: url(./img/cart-shopping.svg);
   width: 1rem;
@@ -124,27 +124,26 @@ a {
   margin-top: 100px;
 }
 
-
 /*Css carrito*/
 
-.art{
+.art {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
-} 
+}
 
-.img-prod{
+.img-prod {
   max-width: 33%;
   min-width: 33%;
 }
-.titulo-art{
+.titulo-art {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: purple;
 }
-.precio-art{
+.precio-art {
   color: green;
 }
 
-.btn-add{
+.btn-add {
   color: blue;
 }
