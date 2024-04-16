@@ -13,11 +13,14 @@
 <body>
     <header>
         <div class="logo-container">
-            <img class="logo" src="./img/Logo.svg" alt="grupo 10">
+            <img class="logo" src="./img/logo-casablue.png" alt="grupo 10">
             <h1 class="lema">Casa Blue</h1>
         </div>
-        <nav>
-            <ul class="ul-nav" id="menu">
+        <a class="burger" onclick="openClose()">
+            <img class="menu-icon" src="./img/menu-hamburger.svg">
+        </a>
+        <nav style="display: flex;">
+            <ul class=" ul-nav" id="menu">
                 <li class="li-nav"><a href="index.html">Incio</a></li>
                 <li class="li-nav"><a href="contancto.html">Contacto</a></li>
                 <li class="li-nav"><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
@@ -26,10 +29,8 @@
                 </li>
             </ul>
         </nav>
-        <a class="burger" onclick="openClose()">
-            <img class="menu-icon" src="./img/menu-hamburger.svg">
-        </a>
     </header>
+    <div style="height: 30px; width: 100%; background-color: red;"></div>
 </body>
 
 </html>

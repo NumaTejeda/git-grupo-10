@@ -1,3 +1,9 @@
+::root {
+  --color-one: #e74c18;
+  --color-two: #061524;
+  --color-tree: #eddfa7;
+  --color-four: #1dc4e0;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -31,6 +37,7 @@ header {
   color: black;
 }
 nav {
+  display: flex;
   width: fit-content;
 }
 .ul-nav {
@@ -67,24 +74,23 @@ a {
   display: none;
   width: 2rem;
   min-width: 2rem;
-}
-.burger {
   cursor: pointer;
 }
 
+/* Mobile */
 @media screen and (max-width: 600px) {
+  header {
+    display: block;
+  }
   .active {
     display: flex;
     flex-direction: column;
-    visibility: visible;
-    opacity: 1;
     color: black;
     padding: 0;
-    transition: opacity 1s ease;
   }
   #menu {
     width: 100%;
-    background-color: blueviolet;
+    background-color: blue;
   }
   .li-nav {
     display: flex;
@@ -93,28 +99,23 @@ a {
     align-self: center;
   }
   nav {
-    display: flex;
-    position: absolute;
-    z-index: 1;
-    top: 12vh;
-    left: 0;
+    display: none;
     width: 100vw;
   }
   .burger {
     display: block;
+    position: absolute;
+    top: 2vh;
+    right: 2vw;
   }
-  header {
-    justify-content: space-between;
-  }
+
   .ul-nav {
     display: block;
-    visibility: hidden;
     width: fit-content;
-    opacity: 0;
-    transition: opacity 1s ease;
   }
-  .lema {
-    display: none;
+  #menu {
+    position: fixed;
+    left: 0;
   }
 }
 
