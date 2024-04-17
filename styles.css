@@ -4,6 +4,12 @@
   --color-tree: #eddfa7;
   --color-four: #1dc4e0;
 }
+
+@font-face {
+  font-family: "sportesia";
+  src: url("./tipografias/Sportesia.otf") format("opentype");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,7 +28,7 @@ header {
   min-height: 4rem;
   justify-content: space-around;
   align-items: center;
-  background-color: blue;
+  background-color: #061524;
 }
 .logo-container {
   display: flex;
@@ -34,10 +40,12 @@ header {
 }
 .lema {
   margin-left: 1rem;
-  color: black;
+  color: #1dc4e0;
+  font-family: "sportesia";
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
 }
 nav {
-  display: flex;
   width: fit-content;
 }
 .ul-nav {
@@ -53,72 +61,71 @@ nav {
 }
 a {
   font-size: 1rem;
-}
-.li-nav:hover {
-  color: red;
+  color: #1dc4e0;
+  text-decoration: none;
 }
 .carrito {
-  display: inline-block;
-  content: url(./img/cart-shopping.svg);
-  width: 1rem;
-  height: 1rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: #e74c18;
+  border: 3px solid #1dc4e0;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
 }
 .carrito:hover {
-  cursor: pointer;
-}
-a {
-  text-decoration: none;
-  color: inherit;
+  background-color: #eddfa7;
+  border: 3px solid #e74c18;
 }
 .burger {
   display: none;
-  width: 2rem;
-  min-width: 2rem;
-  cursor: pointer;
 }
 
 /* Mobile */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 696px) {
   header {
     display: block;
   }
   .active {
     display: flex;
     flex-direction: column;
-    color: black;
+    color: #061524;
     padding: 0;
   }
   #menu {
     width: 100%;
-    background-color: blue;
+    background-color: #061524;
+    position: fixed;
+    left: 0;
   }
+
   .li-nav {
     display: flex;
     justify-content: center;
     width: 100%;
     align-self: center;
   }
-  nav {
-    display: none;
-    width: 100vw;
+  .menu-icon {
+    width: 2rem;
   }
+  /* nav {
+    display: none;
+  } */
   .burger {
     display: block;
     position: absolute;
-    top: 2vh;
+    width: 2rem;
+    min-width: 2rem;
+    top: 3vh;
     right: 2vw;
+    cursor: pointer;
   }
-
   .ul-nav {
-    display: block;
+    display: none;
     width: fit-content;
   }
-  #menu {
-    position: fixed;
-    left: 0;
-  }
 }
-
 /*Css carrito*/
 
 .art {
