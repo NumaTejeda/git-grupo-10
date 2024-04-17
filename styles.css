@@ -1,3 +1,4 @@
+/* Variables globales */
 ::root {
   --color-one: #e74c18;
   --color-two: #061524;
@@ -5,6 +6,7 @@
   --color-four: #1dc4e0;
 }
 
+/* Obtengo la tipografia */
 @font-face {
   font-family: "sportesia";
   src: url("./tipografias/Sportesia.otf") format("opentype");
@@ -18,6 +20,7 @@
 html {
   height: 100%;
 }
+/* Da estilos al header y lo fija para cuando se haga scroll */
 header {
   display: flex;
   position: fixed;
@@ -30,14 +33,17 @@ header {
   align-items: center;
   background-color: #061524;
 }
+/*Contenedor de logo y lema */
 .logo-container {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
+/*Fijo el ancho del logo y el alto queda libre guardando las relaciones con el ancho.*/
 .logo {
   width: 3rem;
 }
+/* Doy estilos y lo despego un poco del logo */
 .lema {
   margin-left: 1rem;
   color: #1dc4e0;
@@ -45,9 +51,11 @@ header {
   font-size: 1.5rem;
   margin-top: 0.5rem;
 }
+/*El nav toma el ancho del conteido que tenga */
 nav {
   width: fit-content;
 }
+/* Doy estilos al ul y li */
 .ul-nav {
   display: flex;
   padding: 0;
@@ -59,11 +67,13 @@ nav {
   align-self: center;
   width: fit-content;
 }
+/*Estilos al link */
 a {
   font-size: 1rem;
   color: #1dc4e0;
   text-decoration: none;
 }
+/* Estilos al boton del carrito */
 .carrito {
   width: 2rem;
   height: 2rem;
@@ -74,44 +84,57 @@ a {
   cursor: pointer;
   transition: all 0.5s;
 }
+/* Cambio de estilos al posicionar el raton sobre él */
 .carrito:hover {
   background-color: #eddfa7;
   border: 3px solid #e74c18;
 }
+/*Saco el menu mobile*/
 .burger {
   display: none;
 }
 
-/* Mobile */
+/* Mobile pantalla menores a 696px*/
+
 @media screen and (max-width: 696px) {
+  /*Display block ubica los elementos uno abajo del otro*/
   header {
     display: block;
   }
+  /*Se oculta el menu */
+  .ul-nav {
+    display: none;
+    width: fit-content;
+  }
+  /*Esta clase se pone y se saca al apretar en el menu hamburguesa con javascript
+    Se aplica al ul que en este estado esta oculto */
   .active {
     display: flex;
     flex-direction: column;
     color: #061524;
     padding: 0;
   }
+  /* Doy otros estilos al menu para que abarque el ancho total
+  cambio a fixed para que se superponga  */
   #menu {
     width: 100%;
     background-color: #061524;
     position: fixed;
     left: 0;
   }
-
+  /*Centrado de las opciones dle menu*/
   .li-nav {
     display: flex;
     justify-content: center;
     width: 100%;
     align-self: center;
   }
+  /*Tamaño*/
   .menu-icon {
     width: 2rem;
   }
-  /* nav {
-    display: none;
-  } */
+  /* Contenedor del icono del menu 
+    Lo posiciono arriba a la derecha con postion absolute, top y right */
   .burger {
     display: block;
     position: absolute;
@@ -120,10 +143,6 @@ a {
     top: 3vh;
     right: 2vw;
     cursor: pointer;
-  }
-  .ul-nav {
-    display: none;
-    width: fit-content;
   }
 }
 /*Css carrito*/
