@@ -1,0 +1,50 @@
+/* Mobile first - Form*/
+
+::root {
+  --color-one: #e74c18;
+  --color-two: #061524;
+  --color-tree: #eddfa7;
+  --color-four: #1dc4e0;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 20px;
+  color: #061524;
+}
+body {
+  background-color: #e74c18;
+}
+.main-form {
+  width: 100vw;
+}
+.img-form {
+  background-color: #e74c18;
+}
+.form-container {
+  width: 100vw;
+  height: fit-content;
+  padding: 1vh 3vw;
+  background-color: #e74c18;
+}
+.logo-form {
+  width: 80vw;
+}
+.form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1vh 1vw;
+}
+input:not([type="radio"]),
+labe,
+textarea,
+button {
+  width: 100%;
+  margin: 0.5vh 0;
+}
+input,
+textarea {
+  border-radius: 10px;
+  border-color: #1dc4e0;
+  box-shadow: 2px 2px 2px black;
+}

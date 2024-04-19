@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -20,7 +22,7 @@
         <nav>
             <ul class=" ul-nav" id="menu">
                 <li class="li-nav"><a href="index.html">Incio</a></li>
-                <li class="li-nav"><a href="contancto.html">Contacto</a></li>
+                <li class="li-nav"><a href="contacto.html">Contacto</a></li>
                 <li class="li-nav"><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
                 <li class="li-nav"><a href="carrito.html"><img src="./img/carrito.svg" class="carrito"
                             alt="carrito"></a>
@@ -28,17 +30,31 @@
             </ul>
         </nav>
     </header>
-    <form action="" method="post" class=".form">
-        <label for="">Nombre: </label>
-        <input type="text">
-        <label for="">Apellido: </label>
-        <input type="text">
-        <label for="">E-mail: </label>
-        <input type="email">
-        <label for="">Comentario:</label>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <button type="submit">Enviar</button>
-    </form>
+    <main class="main-form">
+        <section class="img-form">
+            <img src="./img/logo-casablue.png" alt="logo" class="logo-form">
+        </section>
+        <section class="form-container">
+            <form action="" method="post" class="form">
+                <label for="">Nombre: </label>
+                <input type="text">
+
+
+                <label for="">Apellido: </label>
+                <input type="text">
+                <input type="radio" id="minorista" name="opciones" value="opcion1">
+                <label for="opcion1">Minorista</label><br>
+
+                <input type="radio" id="mayorista" name="opciones" value="opcion2">
+                <label for="opcion2">Mayorista</label><br>
+                <label for="">E-mail: </label>
+                <input type="email">
+                <label for="">Comentario:</label> <br>
+                <textarea name="" id="" cols="" rows="10"></textarea><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
 </body>
 
 </html>

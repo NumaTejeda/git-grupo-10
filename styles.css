@@ -99,7 +99,7 @@ a {
 .burger {
   display: none;
 }
-.menu-footer{
+.menu-footer {
   background-color: rgb(86, 56, 223);
   color: wheat;
   padding: 1em 0;
@@ -110,15 +110,14 @@ a {
 }
 .menu-footer .ul-nav .li-footer {
   display: flex;
-  align-items:space-between;
-  justify-content:space-between;
-  text-decoration:none;
-
+  align-items: space-between;
+  justify-content: space-between;
+  text-decoration: none;
 }
 .li-footer:hover {
   color: rgb(38, 69, 73);
 }
-.menu-footer{
+.menu-footer {
   background-color: rgb(86, 56, 223);
   color: wheat;
   padding: 1em 0;
@@ -129,10 +128,9 @@ a {
 }
 .menu-footer .ul-nav .li-footer {
   display: flex;
-  align-items:space-between;
-  justify-content:space-between;
-  text-decoration:none;
-
+  align-items: space-between;
+  justify-content: space-between;
+  text-decoration: none;
 }
 .li-footer:hover {
   color: rgb(38, 69, 73);
