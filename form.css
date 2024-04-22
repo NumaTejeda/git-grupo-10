@@ -10,41 +10,113 @@
   box-sizing: border-box;
   margin: 0;
   font-size: 20px;
-  color: #061524;
+  font-family: "Montserrat", sans-serif;
 }
 body {
   background-color: #e74c18;
 }
 .main-form {
-  width: 100vw;
+  height: fit-content;
+  background-color: #e74c18;
 }
 .img-form {
   background-color: #e74c18;
+  width: 100vw;
 }
 .form-container {
-  width: 100vw;
+  width: 90vw;
+  margin: 0 5vw;
   height: fit-content;
   padding: 1vh 3vw;
-  background-color: #e74c18;
+  background-color: #061524;
+  border-radius: 4px;
+  z-index: 1; /*Esto esta para superponer el formulario con la imagen */
 }
 .logo-form {
   width: 80vw;
+  margin: 0 10vw;
 }
 .form {
   max-width: 500px;
   margin: 0 auto;
   padding: 1vh 1vw;
 }
+
+/*Codigo animacion input*/
+.box-form {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid yellow;
+  height: 10vh;
+  justify-content: center;
+}
+label,
+input:not([type="radio"]) {
+  position: absolute;
+}
+.box-form label {
+  position: absolute;
+  z-index: 1111;
+  color: black;
+  margin-left: 2vw;
+}
+input:focus + label {
+  transform: translate(3px, -19px);
+  color: red;
+}
+label {
+  transition: all 2s;
+}
+
 input:not([type="radio"]),
-labe,
+label,
 textarea,
 button {
   width: 100%;
-  margin: 0.5vh 0;
+  margin: 1vh 0;
 }
 input,
 textarea {
-  border-radius: 10px;
+  outline: none;
+  border: 1px solid;
+  border-radius: 5px;
   border-color: #1dc4e0;
-  box-shadow: 2px 2px 2px black;
+  padding: 0.5vh 0.5vw;
+  transition: all 0.5s;
+}
+input[type="radio"] {
+  margin: 1vh 0;
+}
+label {
+  color: #eddfa7;
+}
+input:focus,
+input:valid,
+textarea:focus,
+label:focus {
+  border: 1px solid #061524;
+  box-shadow: 0 0 5px blue; /* Cambia el color del borde interior al recibir foco */
+}
+.form-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+/*Desktop*/
+
+@media screen and (min-width: 700px) {
+  .main-form {
+    display: flex;
+    margin: 0 10vw;
+  }
+  .logo-form {
+    width: 30vw;
+  }
+  .form-container {
+    position: relative;
+    z-index: 0;
+    max-width: 50vw;
+  }
 }

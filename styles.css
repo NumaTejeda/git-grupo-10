@@ -18,7 +18,8 @@
   font-size: 20px;
 }
 html {
-  height: 100%;
+  height: 100vh;
+  width: 100vw;
 }
 body {
   padding-top: 6rem;
@@ -35,9 +36,11 @@ header {
   width: 100%;
   padding: 0.5rem;
   min-height: 4rem;
+  width: 100vw;
   justify-content: space-around;
   align-items: center;
   background-color: #061524;
+  z-index: 100;
 }
 /*Contenedor de logo y lema */
 .logo-container {
@@ -182,8 +185,8 @@ a {
     position: absolute;
     width: 2rem;
     min-width: 2rem;
-    top: 3vh;
-    right: 2vw;
+    top: 2.5vh;
+    right: 2.5vw;
     cursor: pointer;
   }
 }

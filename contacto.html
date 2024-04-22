@@ -7,7 +7,9 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="form.css">
-    <script src="script.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
 </head>
 
 <body>
@@ -36,25 +38,43 @@
         </section>
         <section class="form-container">
             <form action="" method="post" class="form">
-                <label for="">Nombre: </label>
-                <input type="text">
-
-
-                <label for="">Apellido: </label>
-                <input type="text">
-                <input type="radio" id="minorista" name="opciones" value="opcion1">
-                <label for="opcion1">Minorista</label><br>
-
-                <input type="radio" id="mayorista" name="opciones" value="opcion2">
-                <label for="opcion2">Mayorista</label><br>
-                <label for="">E-mail: </label>
-                <input type="email">
-                <label for="">Comentario:</label> <br>
-                <textarea name="" id="" cols="" rows="10"></textarea><br>
+                <div class="box-form">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                <div class="box-form">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" required>
+                </div>
+                <input type="radio" id="minorista" name="opciones" value="minorista" required>
+                <label for="minorista">Minorista</label><br>
+                <input type="radio" id="mayorista" name="opciones" value="mayorista" required>
+                <label for="mayorista">Mayorista</label><br>
+                <div class="box-form">
+                    <label for="mail" id="mail2">E-mail</label>
+                    <input type="email" id="mail" required>
+                </div>
+                <label for="consulta">Tu consulta:</label> <br>
+                <textarea name="consulta" id="consulta" cols="" rows="5" required></textarea><br>
                 <button type="submit">Enviar</button>
             </form>
         </section>
     </main>
+    <footer class="menu-footer">
+        <nav style="display: flex">
+            <ul class="ul-nav">
+                <li class="li-footer">
+                    <a href="terminos.html">Terminos y Condiciones</a>
+                </li>
+                <li class="li-footer">
+                    <a href="privacidad.html">Política de Privacidad</a>
+                </li>
+            </ul>
+        </nav>
+        <p>Copyright © 2024 Casa Blue</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
