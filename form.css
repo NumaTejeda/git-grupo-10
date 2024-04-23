@@ -17,8 +17,27 @@ body {
   background-color: #e74c18;
 }
 .img-form {
+  position: relative;
   background-color: #e74c18;
   width: 100vw;
+}
+.text-container {
+  position: absolute;
+  top: 10%;
+  width: 100vw;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+}
+.text-img {
+  min-width: 80%;
+  color: #eddfa7;
+  font-weight: 600;
+  padding: 2vw;
+  margin: 15% auto;
+  text-align: center;
 }
 .form-container {
   width: 90vw;
@@ -48,16 +67,16 @@ body {
   height: 10vh;
   justify-content: center;
 }
-label,
-input:not([type="radio"]) {
-  position: absolute;
-}
+
 input:not([type="radio"]),
 textarea {
   background-color: #1dc4e0;
-  padding-left: 4vw;
-  font-weight: 700;
+  padding-left: 3vw;
+  font-weight: 600;
   color: #e74c18;
+}
+textarea {
+  padding: 1vh 3vw;
 }
 
 .box-form label {
@@ -84,27 +103,26 @@ button {
 }
 
 .btn-submit {
-  background-color: #e74c18;
+  background-color: #061524;
   border: 2px solid #1dc4e0;
   border-radius: 4px;
-  color: #061524;
+  color: #eddfa7;
   font-weight: 600;
   transition: all 0.5s;
 }
 
-/* .btn-submit:hover {
-  background-color: #1dc4e0;
-  border: 2px solid #e74c18;
+.btn-submit:hover {
+  background-color: #e74c18;
+  border: 2px solid #eddfa7;
   color: #061524;
   font-weight: 800;
-} */
+}
 input,
 textarea {
   outline: none;
   border: 1px solid;
   border-radius: 5px;
   border-color: #1dc4e0;
-  padding: 0.5vh 0.5vw;
   transition: all 0.5s;
 }
 #minorista,
@@ -112,13 +130,18 @@ textarea {
   margin-right: 2vw;
 }
 .radio-btn {
-  margin: 2vh 0;
+  display: flex;
+  margin: 2vh auto;
+}
+.radio-btn input:checked + label {
+  color: #e74c18;
+  font-weight: 800;
 }
 label {
   color: #eddfa7;
 }
-input:focus,
-input:valid,
+.box-form input:focus,
+.box-form input:valid,
 textarea:focus,
 label:focus {
   border: 1px solid #061524;

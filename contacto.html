@@ -35,26 +35,31 @@
     <main class="main-form">
         <section class="img-form">
             <img src="./img/logo-casablue.png" alt="logo" class="logo-form">
+            <div class="text-container">
+                <p class="text-img">
+                    Rellena los campos y envia tu consulta. <br> Nos comprometemos a contestar dentro de las 24hs!
+                </p>
+            </div>
         </section>
         <section class="form-container">
-            <form action="" method="post" class="form">
+            <form action="https://formsubmit.co/numa.tejeda@gmail.com" method="post" class="form">
 
+                <div class="radio-btn">
+                    <input type="radio" id="minorista" name="opciones" value="minorista" required>
+                    <label for="minorista">Minorista</label>
+                    <input type="radio" id="mayorista" name="opciones" value="mayorista" required>
+                    <label for="mayorista">Mayorista</label>
+                </div>
                 <div class="box-form">
-                    <input type="text" id="nombre" required>
+                    <input type="text" id="nombre" name="nombre" required>
                     <label for="nombre">Nombre</label>
                 </div>
                 <div class="box-form">
-                    <input type="text" id="apellido" required>
+                    <input type="text" id="apellido" name="required" required>
                     <label for="apellido">Apellido</label>
                 </div>
-                <div class="radio-btn">
-                    <input type="radio" id="minorista" name="opciones" value="minorista" required>
-                    <label for="minorista">Minorista</label><br>
-                    <input type="radio" id="mayorista" name="opciones" value="mayorista" required>
-                    <label for="mayorista">Mayorista</label><br>
-                </div>
                 <div class="box-form">
-                    <input type="email" id="mail" required>
+                    <input type="email" id="mail" name="email" required>
                     <label for="mail" id="mail2">E-mail</label>
                 </div>
                 <label for="consulta">Tu consulta:</label> <br>
