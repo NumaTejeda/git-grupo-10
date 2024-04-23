@@ -33,7 +33,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   padding: 0.5rem;
   min-height: 4rem;
   width: 100vw;
@@ -162,7 +162,7 @@ a {
   /* Doy otros estilos al menu para que abarque el ancho total
   cambio a fixed para que se superponga  */
   #menu {
-    width: 100%;
+    width: 100vw;
     background-color: #061524;
     position: fixed;
     left: 0;
@@ -235,36 +235,47 @@ a {
 
 /*CSS CARRUSEL*/
 
-.carrusel{
+.carrusel {
   width: 75vh;
   height: 75vh;
   margin: 50px auto 0;
   overflow: hidden;
   animation: slide 15s infinite alternate ease-in-out;
 }
-.carrusel ul{
+.carrusel ul {
   display: flex;
   padding: 0;
   width: 300%;
 }
 
-.carrusel li{
+.carrusel li {
   list-style: none;
   width: 100%;
 }
 
-.carrusel img{
+.carrusel img {
   width: 100%;
 }
 
 @keyframes slide {
-  0%{margin-left: 0%;}
-  30%{margin-left: 0%;}  
+  0% {
+    margin-left: 0%;
+  }
+  30% {
+    margin-left: 0%;
+  }
 
-  33%{margin-left: -100%;}
-  63%{margin-left: -100%;}  
+  33% {
+    margin-left: -100%;
+  }
+  63% {
+    margin-left: -100%;
+  }
 
-  66%{margin-left: -200%;}
-  96%{margin-left: -200%;}  
-  
+  66% {
+    margin-left: -200%;
+  }
+  96% {
+    margin-left: -200%;
+  }
 }
