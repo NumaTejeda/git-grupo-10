@@ -11,6 +11,7 @@
 }
 body {
   background-color: #e74c18;
+  overflow-x: hidden;
 }
 .main-form {
   height: fit-content;
@@ -58,6 +59,12 @@ body {
   padding: 1vh 1vw;
 }
 
+input:not([type="radio"]),
+label,
+textarea,
+button {
+  width: 100%;
+}
 /*Codigo animacion input*/
 .box-form {
   display: flex;
@@ -93,13 +100,6 @@ textarea {
 }
 label {
   transition: all 2s;
-}
-
-input:not([type="radio"]),
-label,
-textarea,
-button {
-  width: 100%;
 }
 
 .btn-submit {
@@ -155,19 +155,49 @@ label:focus {
 /*Desktop*/
 
 @media screen and (min-width: 700px) {
+  body {
+    width: 100vw;
+  }
   .main-form {
     display: flex;
-    margin: 0 10vw;
+    margin: 0;
   }
   .logo-form {
-    width: 30vw;
+    position: absolute;
+    width: 40vw;
+    top: -15px;
   }
   .form-container {
     position: relative;
     z-index: 0;
-    max-width: 50vw;
+    max-width: 400px;
+    margin-right: 13vw;
   }
   .box-form label {
     margin-left: 0.5vw;
+  }
+  .img-form {
+    position: relative;
+  }
+  .text-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 60vh;
+  }
+  .text-img {
+    position: absolute;
+    margin: 0 50% 0 9vw;
+    padding-right: 44vw;
+    width: fit-content;
+    /* margin-left: 9%;
+    margin-right: 50%; */
+  }
+  textarea {
+    padding: 1vh 1vw;
+  }
+  input:not([type="radio"]) {
+    padding: 0.5vh 1vw;
   }
 }
