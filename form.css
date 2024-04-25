@@ -154,7 +154,7 @@ label:focus {
 
 /*Desktop*/
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 735px) {
   body {
     width: 100vw;
   }
@@ -164,7 +164,8 @@ label:focus {
   }
   .logo-form {
     position: absolute;
-    width: 40vw;
+    width: 500px;
+    margin: 0 10vw 0 10%;
     top: -15px;
   }
   .form-container {
@@ -191,8 +192,6 @@ label:focus {
     margin: 0 50% 0 9vw;
     padding-right: 44vw;
     width: fit-content;
-    /* margin-left: 9%;
-    margin-right: 50%; */
   }
   textarea {
     padding: 1vh 1vw;
