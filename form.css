@@ -125,8 +125,7 @@ textarea {
   border-color: #1dc4e0;
   transition: all 0.5s;
 }
-#minorista,
-#mayorista {
+input[type="radio"] {
   margin-right: 2vw;
 }
 .radio-btn {
@@ -196,7 +195,11 @@ label:focus {
   textarea {
     padding: 1vh 1vw;
   }
+  /*!!!!!!!! ---> espacio entre label e inputRadio, CORREGIR!*/
   input:not([type="radio"]) {
     padding: 0.5vh 1vw;
+  }
+  input[type="radio"] {
+    margin: 0 1vw;
   }
 }
