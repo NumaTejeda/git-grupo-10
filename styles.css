@@ -1,5 +1,5 @@
 /* Variables globales */
-::root {
+:root {
   --color-one: #e74c18;
   --color-two: #061524;
   --color-tree: #eddfa7;
@@ -129,18 +129,8 @@ a {
 .burger {
   display: none;
 }
-
-/*Styles footer*/
-.menu-footer .ul-nav .li-footer {
-  display: flex;
-  align-items: space-between;
-  justify-content: space-between;
-  text-decoration: none;
-}
-.li-footer:hover {
-  color: rgb(38, 69, 73);
-}
-.menu-footer {
+/*CSS Footer y páginas relacionadas*/
+.menu-footer{
   background-color: rgb(86, 56, 223);
   color: wheat;
   padding: 1em 0;
@@ -149,15 +139,46 @@ a {
   bottom: 0;
   width: 100%;
 }
-.menu-footer .ul-nav .li-footer {
-  display: flex;
-  align-items: space-between;
-  justify-content: space-between;
+.menu-footer ul-nav{
+  list-style: none;
+}
+.li-footer:hover {
+  color: rgb(38, 69, 73);
+}
+.menu-footer ul-nav li-footer {
+  display: inline-block;
+  align-items:space-between;
+  justify-content:space-between;
+  list-style: none;
+  padding: 0;
+  margin-right: 30px;
+  text-decoration: none;
+}
+.menu-footer ul-nav li-footer:last-child {
+  margin-right: 0;
+}
+.li-footer{
+  padding-left:30px;
+  padding-right: 30px;
   text-decoration: none;
 }
 .li-footer:hover {
   color: rgb(38, 69, 73);
 }
+/*CSS de la pagina de legales*/
+.container-legales{
+  background-color: var(--color-four);
+  margin: 20px; 
+  padding: 30px;
+ 
+}
+.container-legales li{
+font-weight: bold;
+}
+h3, p, .ul, li{
+  margin-top: 20px;
+}
+
 
 /* Mobile pantalla menores a 696px*/
 
