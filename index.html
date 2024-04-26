@@ -2,35 +2,297 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
 
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32-circule.png" id="favicon">
+
 </head>
 
 <body>
-    <header>
-        <div class="logo-container">
-            <img class="logo" src="./img/logo-casablue.png" alt="grupo 10">
-            <h1 class="lema">Casa Blue</h1>
+  <header>
+    <div class="logo-container">
+      <img class="logo" src="./img/logo-casablue.png" alt="grupo 10" />
+      <h1 class="lema">Casa Blue</h1>
+    </div>
+    <a class="burger" onclick="openClose()">
+      <img class="menu-icon" src="./img/menu-close.svg" />
+    </a>
+    <nav>
+      <ul class="ul-nav" id="menu">
+        <li class="li-nav"><a href="index.html">Incio</a></li>
+        <li class="li-nav"><a href="contacto.html">Contacto</a></li>
+        <li class="li-nav">
+          <a href="sobre-nosotros.html">Sobre Nosotros</a>
+        </li>
+        <li class="li-nav">
+          <a href="carrito.html"><img src="./img/carrito.svg" class="carrito" alt="carrito" /></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <section id="search" class="container">
+        <h2 class="search-title">Destacados</h2>
+        <input type="text" class="input-search" placeholder="Buscar...">
+      </section>
+
+      <!-- popular: tendencia hoy -->
+      <section id="popular">
+
+        <!-- División contenedora del titulo
+          e imagenes -->
+        <div class="container" class="articulo-grid">
+
+          <h2>Lo más vendido</h2>
+          <!-- Div para mostrar todas las imagenes e info -->
+          <div id="list-popular">
+
+            <!-- element 01 -->
+            <div class="articulo-item">
+              <a href="./templates/detail-articulo.html">
+                <img src="img" alt="" class="articulo-item-img">
+
+                <div class="articulo-item-detail">
+                  <p class="articulo-item-detail-title">Zapatillas. articulo</p>
+                  <p class="articulo-item-detail-subtitle">negro - Descripcion</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- element 02 -->
+            <div class="articulo-item">
+              <a href="./templates/detail-articulo.html">
+                <img src="./static/img/.jpg" alt="" class="articulo-item-img">
+
+                <div class="articulo-item-detail">
+                  <p class="articulo-item-detail-title">Remera. articulo</p>
+                  <p class="articulo-item-detail-subtitle">Roja - Descripcion</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- element 03 -->
+            <div class="articulo-item">
+              <a href="./templates/detail-articulo.html">
+                <img src="./static/img/.jpg" alt="" class="articulo-item-img">
+
+                <div class="articulo-item-detail">
+                  <p class="articulo-item-detail-title">Short. articulo</p>
+                  <p class="articulo-item-detail-subtitle">Azul - Descripcion</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- element 04 -->
+            <div class="articulo-item">
+              <a href="./templates/detail-articulo.html">
+                <img src="./static/img/.jpg" alt="" class="articulo-item-img">
+
+                <div class="articulo-item-detail">
+                  <p class="articulo-item-detail-title">Zapatillas . articulo</p>
+                  <p class="articulo-item-detail-subtitle">negro - Descripcion</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- element 05 -->
+            <div class="articulo-item">
+              <a href="./templates/detail-articulo.html">
+                <img src="./static/img/.jpg" alt="" class="articulo-item-img">
+
+                <div class="articulo-item-detail">
+                  <p class="articulo-item-detail-title">Buzo. articulo</p>
+                  <p class="articulo-item-detail-subtitle">Negro - Descripcion</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- element 06 -->
+            <div class="articulo-item">
+              <a href="./templates/detail-articulo.html">
+                <img src="./static/img/mario.jpg" alt="" class="articulo-item-img">
+
+                <div class="articulo-item-detail">
+                  <p class="articulo-item-detail-title">ZAPATILLAS. articulo</p>
+                  <p class="articulo-item-detail-subtitle">ROJO - Descripcion</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- element 07 -->
+            <div class="articulo-item">
+              <a href="./templates/detail-articulo.html">
+                <img src="./static/img/mario.jpg" alt="" class="articulo-item-img">
+
+                <div class="articulo-item-detail">
+                  <p class="articulo-item-detail-title">ZAPATILLAS. articulo</p>
+                  <p class="articulo-item-detail-subtitle">ROJO - Descripcion</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- element 08 -->
+            <div class="articulo-item">
+              <a href="./templates/detail-articulo.html">
+                <img src="./static/img/mario.jpg" alt="" class="articulo-item-img">
+
+                <div class="articulo-item-detail">
+                  <p class="articulo-item-detail-title">ZAPATILLAS. articulo</p>
+                  <p class="articulo-item-detail-subtitle">ROJO - Descripcion</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- element 09 -->
+            <div class="articulo-item">
+              <a href="./templates/detail-articulo.html">
+                <img src="./static/img/mario.jpg" alt="" class="articulo-item-img">
+
+                <div class="articulo-item-detail">
+                  <p class="articulo-item-detail-title">ZAPATILLAS. articulo</p>
+                  <p class="articulo-item-detail-subtitle">ROJO - Descripcion</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- element 10 -->
+            <div class="articulo-item">
+              <a href="./templates/detail-articulo.html">
+                <img src="./static/img/.jpg" alt="" class="articulo-item-img">
+
+                <div class="articulo-item-detail">
+                  <p class="articulo-item-detail-title">Buzo. articulo</p>
+                  <p class="articulo-item-detail-subtitle">ROJO - Descripcion</p>
+                </div>
+              </a>
+            </div>
+
+          </div>
+
         </div>
-        <a class="burger" onclick="openClose()">
-            <img class="menu-icon" src="./img/menu-hamburger.svg">
-        </a>
-        <nav style="display: flex;">
-            <ul class=" ul-nav" id="menu">
-                <li class="li-nav"><a href="index.html">Incio</a></li>
-                <li class="li-nav"><a href="contancto.html">Contacto</a></li>
-                <li class="li-nav"><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li class="li-nav"><a href="carrito.html"><img src="./img/cart-shopping.svg" class="carrito"
-                            alt="carrito"></a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <div style="height: 30px; width: 100%; background-color: red;"></div>
+
+      </section>
+
+      <!-- top-rated: mostrar novedades-->
+      <section id="top-rated">
+
+        <!-- División contenedora del titulo
+                e imagenes -->
+        <div class="container">
+
+          <h2>NOVEDADES.</h2>
+          <!-- Div para mostrar todas las imagenes e info 
+                        de las películas -->
+          <div id="list-top-rated" class="articulo-scroller">
+
+            <!-- Info mismo formato para todas -->
+            <!-- element 01 -->
+            <div class="articulo-item-v2">
+              <div class="wrapper">
+                <img src="./static/img/.jpg" alt="" class="articulo-item-img-v2">
+              </div>
+              <div class="articulo-item-detail-v2">
+                <p class="articulo-item-detail-title-v2">articulo-Title</p>
+                <p class="articulo-item-detail-subtitle-v2">Year-Rated</p>
+              </div>
+            </div>
+
+            <!-- element 02 -->
+            <div class="articulo-item-v2">
+              <div class="wrapper">
+                <img src="./static/img/.jpg" alt="" class="articulo-item-img-v2">
+              </div>
+              <div class="articulo-item-detail-v2">
+                <p class="articulo-item-detail-title-v2">articulo-Title</p>
+                <p class="articulo-item-detail-subtitle-v2">Year-Rated</p>
+              </div>
+            </div>
+
+            <!-- element 03 -->
+            <div class="articulo-item-v2">
+              <div class="wrapper">
+                <img src="./static/img/.jpg" alt="" class="articulo-item-img-v2">
+              </div>
+              <div class="articulo-item-detail-v2">
+                <p class="articulo-item-detail-title-v2">articulo-Title</p>
+                <p class="articulo-item-detail-subtitle-v2">Year-Rated</p>
+              </div>
+            </div>
+
+            <!-- element 04 -->
+            <div class="articulo-item-v2">
+              <div class="wrapper">
+                <img src="./static/img/.jpg" alt="" class="articulo-item-img-v2">
+              </div>
+              <div class="articulo-item-detail-v2">
+                <p class="articulo-item-detail-title-v2">articulo-Title</p>
+                <p class="articulo-item-detail-subtitle-v2">Year-Rated</p>
+              </div>
+            </div>
+
+            <!-- element 05 -->
+            <div class="articulo-item-v2">
+              <div class="wrapper">
+                <img src="./static/img/.jpg" alt="" class="articulo-item-img-v2">
+              </div>
+              <div class="articulo-item-detail-v2">
+                <p class="articulo-item-detail-title-v2">articulo-Title</p>
+                <p class="articulo-item-detail-subtitle-v2">Year-Rated</p>
+              </div>
+            </div>
+
+            <!-- element 06 -->
+            <div class="articulo-item-v2">
+              <div class="wrapper">
+                <img src="./static/img/mario.jpg" alt="" class="articulo-item-img-v2">
+              </div>
+              <div class="articulo-item-detail-v2">
+                <p class="articulo-item-detail-title-v2">articulo-Title</p>
+                <p class="articulo-item-detail-subtitle-v2">Year-Rated</p>
+              </div>
+            </div>
+
+            <!-- element 07 -->
+            <div class="articulo-item-v2">
+              <div class="wrapper">
+                <img src="./static/img/.jpg" alt="" class="articulo-item-img-v2">
+              </div>
+              <div class="articulo-item-detail-v2">
+                <p class="articulo-item-detail-title-v2">articulo-Title</p>
+                <p class="articulo-item-detail-subtitle-v2">Year-Rated</p>
+              </div>
+            </div>
+
+
+
+
+          </div>
+
+
+
+        </div>
+
+      </section>
+  </main>
+
+  <footer class="menu-footer">
+    <nav style="display: flex">
+      <ul class="ul-nav">
+        <li class="li-footer">
+          <a href="terminos.html">Terminos y Condiciones</a>
+        </li>
+        <li class="li-footer">
+          <a href="privacidad.html">Política de Privacidad</a>
+        </li>
+      </ul>
+    </nav>
+    <p>Copyright © 2024 Casa Blue</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

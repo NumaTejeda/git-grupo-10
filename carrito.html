@@ -6,36 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32-circule.png" id="favicon">
+
 </head>
 
 <body>
     <header>
         <div class="logo-container">
-            <img class="logo" src="./img/Logo.svg" alt="grupo 10">
+            <img class="logo" src="./img/logo-casablue.png" alt="grupo 10">
             <h1 class="lema">Casa Blue</h1>
         </div>
+        <a class="burger" onclick="openClose()">
+            <img class="menu-icon" src="./img/menu-close.svg">
+        </a>
         <nav>
-            <ul class="ul-nav" id="menu">
+            <ul class=" ul-nav" id="menu">
                 <li class="li-nav"><a href="index.html">Incio</a></li>
-                <li class="li-nav"><a href="contancto.html">Contacto</a></li>
+                <li class="li-nav"><a href="contacto.html">Contacto</a></li>
                 <li class="li-nav"><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li class="li-nav carrito"><a href="carrito.html"></a></li>
+                <li class="li-nav"><a href="carrito.html"><img src="./img/carrito.svg" class="carrito"
+                            alt="carrito"></a>
+                </li>
             </ul>
         </nav>
-        <a class="burger" onclick="openClose()">
-            <img class="menu-icon" src="./img/menu-hamburger.svg">
-        </a>
     </header>
-    <div class="art"> 
-        <img class="img-prod" src="./img/Campera-Polar-1.jpg" alt="*" > 
+    <div class="art">
+        <div class="carrusel">
+            <ul class="imag">
+                <li><img class="img-prod" src="./img/Campera-Polar-1.jpg" alt="img1"></li>
+                <li><img class="img-prod" src="./img/Calza-termica.jpg" alt="img2"></li>
+                <li><img class="img-prod" src="./img/Remera-running.jpg" alt="img3"></li>
+            </ul>
+        <ul class="puntos">
+            <li><div class="puntos"><h1>.</h1></div></li>
+            <li><div class="puntos"><h1>.</h1></div></li>
+            <li><div class="puntos"><h1>.</h1></div></li>
+        </ul>
+        </div>
         <div class="info-prod">
             <h2 class="titulo-art">Campera polar</h2>
             <div class="descripcion">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, 
-                    pariatur illum? Quaerat sit mollitia soluta sed eaque minus, dolorem, 
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti,
+                    pariatur illum? Quaerat sit mollitia soluta sed eaque minus, dolorem,
                     quo vero harum ipsa, deleniti tempore quidem! Autem quia rem quod.
                 </p>
             </div>
@@ -46,18 +61,18 @@
                 <span>XL</span>
                 <span>XXL</span>
             </div>
-            <p class="precio-art">$ 18.000,00</p>    
+            <p class="precio-art">$ 18.000,00</p>
             <button class="btn-add">Añade al Carrito</button>
         </div>
     </div>
-    <div class="art"> 
-        <img class="img-prod" src="./img/Zapat-runner.jpg" alt="*"> 
+    <div class="art">
+        <img class="img-prod" src="./img/Zapat-runner.jpg" alt="*">
         <div class="info-prod">
             <h2 class="titulo-art">Zapatillas Running</h2>
             <div class="descripcion">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, 
-                    pariatur illum? Quaerat sit mollitia soluta sed eaque minus, dolorem, 
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti,
+                    pariatur illum? Quaerat sit mollitia soluta sed eaque minus, dolorem,
                     quo vero harum ipsa, deleniti tempore quidem! Autem quia rem quod.
                 </p>
             </div>
@@ -69,18 +84,18 @@
                 <span>43</span>
                 <span>44</span>
             </div>
-            <p class="precio-art">$ 72.000,00</p>    
+            <p class="precio-art">$ 72.000,00</p>
             <button class="btn-add">Añade al Carrito</button>
         </div>
     </div>
-    <div class="art"> 
-        <img class="img-prod" src="./img/Short-sport.jpg" alt="*"> 
+    <div class="art">
+        <img class="img-prod" src="./img/Short-sport.jpg" alt="*">
         <div class="info-prod">
             <h2 class="titulo-art">Short deportivo</h2>
             <div class="descripcion">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, 
-                    pariatur illum? Quaerat sit mollitia soluta sed eaque minus, dolorem, 
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti,
+                    pariatur illum? Quaerat sit mollitia soluta sed eaque minus, dolorem,
                     quo vero harum ipsa, deleniti tempore quidem! Autem quia rem quod.
                 </p>
             </div>
@@ -92,18 +107,18 @@
                 <span>46</span>
                 <span>48</span>
             </div>
-            <p class="precio-art">$ 27.500,00</p>    
+            <p class="precio-art">$ 27.500,00</p>
             <button class="btn-add">Añade al Carrito</button>
         </div>
-    </div>    
-    <div class="art"> 
-        <img class="img-prod" src="./img/Remera-running.jpg" alt="*"> 
+    </div>
+    <div class="art">
+        <img class="img-prod" src="./img/Remera-running.jpg" alt="*">
         <div class="info-prod">
             <h2 class="titulo-art">Remera Running</h2>
             <div class="descripcion">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, 
-                    pariatur illum? Quaerat sit mollitia soluta sed eaque minus, dolorem, 
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti,
+                    pariatur illum? Quaerat sit mollitia soluta sed eaque minus, dolorem,
                     quo vero harum ipsa, deleniti tempore quidem! Autem quia rem quod.
                 </p>
             </div>
@@ -114,18 +129,18 @@
                 <span>XL</span>
                 <span>XXL</span>
             </div>
-            <p class="precio-art">$ 7.850,00</p>    
+            <p class="precio-art">$ 7.850,00</p>
             <button class="btn-add">Añade al Carrito</button>
         </div>
-    </div>    
-    <div class="art"> 
-        <img class="img-prod" src="./img/Calza-termica.jpg" alt="*"> 
+    </div>
+    <div class="art">
+        <img class="img-prod" src="./img/Calza-termica.jpg" alt="*">
         <div class="info-prod">
             <h2 class="titulo-art">Calza Térmica</h2>
             <div class="descripcion">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, 
-                    pariatur illum? Quaerat sit mollitia soluta sed eaque minus, dolorem, 
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti,
+                    pariatur illum? Quaerat sit mollitia soluta sed eaque minus, dolorem,
                     quo vero harum ipsa, deleniti tempore quidem! Autem quia rem quod.
                 </p>
             </div>
@@ -137,12 +152,16 @@
                 <span>46</span>
                 <span>48</span>
             </div>
-            <p class="precio-art">$ 29.750,00</p>    
+            <p class="precio-art">$ 29.750,00</p>
             <button class="btn-add">Añade al Carrito</button>
         </div>
     </div>
     <footer>
         <h1 class="footer">@2020 todos los derechos reservados</h1>
     </footer>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
