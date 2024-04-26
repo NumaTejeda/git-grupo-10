@@ -1,14 +1,12 @@
 /* Mobile first - Form*/
 
-::root {
+:root {
   --color-one: #e74c18;
   --color-two: #061524;
   --color-tree: #eddfa7;
   --color-four: #1dc4e0;
 }
-* {
-  font-family: "Montserrat", sans-serif;
-}
+
 body {
   background-color: #e74c18;
   overflow-x: hidden;

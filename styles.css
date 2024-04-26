@@ -5,17 +5,18 @@
   --color-tree: #eddfa7;
   --color-four: #1dc4e0;
 }
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* Obtengo la tipografia */
 @font-face {
   font-family: "sportesia";
   src: url("./tipografias/Sportesia.otf") format("opentype");
 }
-
 * {
   box-sizing: border-box;
   margin: 0;
   font-size: 20px;
+  font-family: "Montserrat", sans-serif;
 }
 html {
   height: 100vh;
@@ -61,7 +62,7 @@ header {
   margin-top: 0.5rem;
 }
 /*El nav toma el ancho del conteido que tenga */
-nav {
+.nav-menu {
   width: fit-content;
 }
 /* Doy estilos al ul y li */
@@ -139,13 +140,13 @@ a {
   bottom: 0;
   width: 100%;
 }
-.menu-footer ul-nav{
+.menu-footer .ul-footer{
   list-style: none;
 }
 .li-footer:hover {
   color: rgb(38, 69, 73);
 }
-.menu-footer ul-nav li-footer {
+.menu-footer .ul-footer .li-footer {
   display: inline-block;
   align-items:space-between;
   justify-content:space-between;
@@ -154,8 +155,13 @@ a {
   margin-right: 30px;
   text-decoration: none;
 }
-.menu-footer ul-nav li-footer:last-child {
+.menu-footer .ul-footer .li-footer:last-child {
   margin-right: 0;
+}
+.nav-footer{
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 .li-footer{
   padding-left:30px;
