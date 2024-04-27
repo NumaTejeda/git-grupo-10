@@ -12,7 +12,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
     rel="stylesheet">
-  <script src="script.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32-circule.png" id="favicon">
+ 
 </head>
 
 <body>
@@ -24,9 +25,9 @@
     <a class="burger" onclick="openClose()">
       <img class="menu-icon" src="./img/menu-close.svg" />
     </a>
-    <nav>
+    <nav class="nav-menu">
       <ul class="ul-nav" id="menu">
-        <li class="li-nav"><a href="index.html">Incio</a></li>
+        <li class="li-nav"><a href="index.html">Inicio</a></li>
         <li class="li-nav"><a href="contacto.html">Contacto</a></li>
         <li class="li-nav">
           <a href="sobre-nosotros.html">Sobre Nosotros</a>
@@ -58,7 +59,7 @@
       <section id="popular">
 
         <!-- División contenedora del titulo
-                e imagenes -->
+          e imagenes -->
         <div class="container" class="articulo-grid">
 
           <h2>Lo más vendido</h2>
@@ -291,20 +292,22 @@
 
       </section>
   </main>
-
-  <footer class="menu-footer">
-    <nav style="display: flex">
-      <ul class="ul-nav">
-        <li class="li-footer">
-          <a href="terminos.html">Terminos y Condiciones</a>
-        </li>
-        <li class="li-footer">
-          <a href="privacidad.html">Política de Privacidad</a>
-        </li>
-      </ul>
-    </nav>
-    <p>Copyright © 2024 Casa Blue</p>
-  </footer>
-</body>
-
+    <footer class="menu-footer">
+      <nav class="nav-footer">
+        <ul class="ul-footer">
+          <li class="li-footer">
+            <a href="terminos.html">Terminos y Condiciones</a>
+          </li>
+          <li class="li-footer">
+            <a href="privacidad.html">Política de Privacidad</a>
+          </li>
+          <li class="li-footer">
+            <a href="devoluciones.html">Política de Devoluciones</a>
+          </li>
+        </ul>
+      </nav>
+      <p>Copyright © 2024 Casa Blue</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
