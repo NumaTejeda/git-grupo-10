@@ -1,9 +1,12 @@
 /* Variables globales */
-::root {
+:root {
   --color-one: #e74c18;
   --color-two: #061524;
   --color-tree: #eddfa7;
   --color-four: #1dc4e0;
+  --color-five: #fdf5ef;
+  /*fuente/*
+ --primary-font:'Montserrat', sans-serif;
 }
 
 /* Obtengo la tipografia */
@@ -189,4 +192,55 @@ a {
     right: 2.5vw;
     cursor: pointer;
   }
+}
+/*BANNER*/
+#banner{
+  background-image: url('./img/Banner-CA.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.5);
+}
+/*alineamos h2*/
+.card-banner{
+  margin: 0 auto;
+  text-align: center;
+  font-family: var(--primary-font);
+  color:var(--color-one);
+  font-size: 30px;
+}
+/*Estilos al form de búsquedas*/
+.input-search{
+  background-color: var(--bg-input-color);
+  border: 2px solid var(--white-color);
+  border-radius: 25px;
+  font-size: 1rem;
+  height: 50px;
+  margin: 20px 0px;
+  padding: 0px 20px;
+  width: 70%;
+  font-family: var(--primary-font);
+  color: var(--color-five);
+}
+
+.articulo-item-detail{
+  width: 100%;
+  font-size: 0,5%;
+
+
+}
+.img-prod{
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+/*posicionamos el contenedor de los títulos*/
+.container{
+  max-width: 1200px; /*el elemento nunca será más ancho que el valor especificado 
+  en max-width*/
+  margin: 0 auto;
+}
+h2{
+  color: var(--color-two);
+  font-size: 2rem;
 }
