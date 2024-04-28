@@ -286,6 +286,12 @@ li:hover::before {
   width: 300px;
   height: 300px;
   object-fit: cover;
+  display: inline-block;
+    margin-bottom: 50px;
+    /*width: 31.5%;*/
+    position: relative;
+    vertical-align: top;
+    text-align: left;
 }
 /*posicionamos el contenedor de los títulos*/
 .container{
@@ -295,4 +301,12 @@ li:hover::before {
 h2{
   color: var(--color-two);
   font-size: 2rem;
+}
+div.articulo-item {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 100%
 }
