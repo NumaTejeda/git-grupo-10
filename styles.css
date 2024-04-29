@@ -114,7 +114,7 @@ li:hover::before {
     text-decoration: none;
   }
   /* Estilos al boton del carrito */
-  .carrito {
+  .radio-btn {
     width: 2rem;
     height: 2rem;
     background-color: #e74c18;
@@ -256,7 +256,7 @@ li:hover::before {
   margin: 0 auto;
  /* text-align: center;*/
   display: flex;
-  justify-content: center; /* Alineación horizontal centrada */
+  justify-content:space-between; /* Alineación horizontal centrada */
   align-items: center; /* Alineación vertical centrada */
   font-family: var(--primary-font);
   color:var(--color-one);
@@ -264,7 +264,7 @@ li:hover::before {
 }
 /*Estilos al form de búsquedas*/
 .input-search{
-  background-color: var(--color-tree);
+  background-color: var(--color-five);
   border: 2px solid var(--color-two);
   border-radius: 25px;
   font-size: 1rem;
@@ -273,7 +273,12 @@ li:hover::before {
   padding: 0px 20px;
   width: 70%;
   font-family: var(--primary-font);
-  color: var(--color-five);
+  
+}
+.input-search:hover {
+  background-color: var(--color-one);
+  border: 3px solid;
+
 }
 
 .articulo-item-detail{
