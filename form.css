@@ -91,6 +91,7 @@ textarea {
   margin-left: 2vw;
   font-weight: 600;
 }
+
 .box-form input:focus + label,
 .box-form input:valid + label {
   transform: translate(2px, -27px);
