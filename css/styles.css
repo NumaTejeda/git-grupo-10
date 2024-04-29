@@ -79,7 +79,7 @@ header {
   width: fit-content;
   transition: all 1s;
 }
-.li-nav:hover {
+.b-bottom-style:hover {
   border-bottom: 1px solid #e74c18;
 }
 
@@ -197,10 +197,6 @@ li {
   }
   /* Estilos al boton del carrito */
   .radio-btn {
-    width: 2rem;
-    height: 2rem;
-    background-color: #e74c18;
-    border: 3px solid #1dc4e0;
     border-radius: 50%;
     padding: 5px;
     cursor: pointer;

@@ -7,10 +7,10 @@
   --color-five: #fdf5ef;
 }
 @font-face {
-    font-family: "sportesia";
-    src: url("./tipografias/Sportesia.otf") format("opentype");
+  font-family: "sportesia";
+  src: url("./tipografias/Sportesia.otf") format("opentype");
 }
-  
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -30,7 +30,7 @@ body {
   min-height: 100vh;
 }
 
-  /* Da estilos al header y lo fija para cuando se haga scroll */
+/* Da estilos al header y lo fija para cuando se haga scroll */
 header {
   display: flex;
   position: fixed;
@@ -72,7 +72,7 @@ header {
 .ul-nav {
   display: flex;
   padding: 0;
-   width: fit-content;
+  width: fit-content;
 }
 .li-nav {
   list-style: none;
@@ -81,7 +81,7 @@ header {
   width: fit-content;
   transition: all 1s;
 }
-.li-nav:hover {
+.b-bottom-style:hover {
   border-bottom: 1px solid #e74c18;
 }
 
@@ -156,113 +156,111 @@ a {
 
 /* Mobile pantalla menores a 696px*/
 @media screen and (max-width: 722px) {
-/*Display block ubica los elementos uno abajo del otro*/
-header {
-  display: block;
-}
-/*Se oculta el menu */
-.ul-nav {
-  display: none;
-  width: fit-content;
-}
-/*Esta clase se pone y se saca al apretar en el menu hamburguesa con javascript
+  /*Display block ubica los elementos uno abajo del otro*/
+  header {
+    display: block;
+  }
+  /*Se oculta el menu */
+  .ul-nav {
+    display: none;
+    width: fit-content;
+  }
+  /*Esta clase se pone y se saca al apretar en el menu hamburguesa con javascript
 Se aplica al ul que en este estado esta oculto */
-.active {
-  display: flex;
-  flex-direction: column;
-  color: #061524;
-  padding: 0;
-}
-/* Doy otros estilos al menu para que abarque el ancho total cambio a fixed para que se superponga  */
-#menu {
-  width: 100vw;
-  background-color: #061524;
-  position: fixed;
-  left: 0;
-}
-/*Centrado de las opciones dle menu*/
-.li-nav {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  align-self: center;
-}
-/*Tamaño*/
-.menu-icon {
-  width: 2rem;
-}
-/* Contenedor del icono del menu 
+  .active {
+    display: flex;
+    flex-direction: column;
+    color: #061524;
+    padding: 0;
+  }
+  /* Doy otros estilos al menu para que abarque el ancho total cambio a fixed para que se superponga  */
+  #menu {
+    width: 100vw;
+    background-color: #061524;
+    position: fixed;
+    left: 0;
+  }
+  /*Centrado de las opciones dle menu*/
+  .li-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-self: center;
+  }
+  /*Tamaño*/
+  .menu-icon {
+    width: 2rem;
+  }
+  /* Contenedor del icono del menu 
 Lo posiciono arriba a la derecha con postion absolute, top y right */
-.burger {
-  display: block;
-  position: absolute;
-  width: 2rem;
-  min-width: 2rem;
-  top: 2.5vh;
-  right: 2.5vw;
-  cursor: pointer;
+  .burger {
+    display: block;
+    position: absolute;
+    width: 2rem;
+    min-width: 2rem;
+    top: 2.5vh;
+    right: 2.5vw;
+    cursor: pointer;
+  }
 }
-}
-
 
 /*Css carrito*/
 
-.art{
-
+.art {
   padding: 20px;
   height: 800px;
   width: 100%;
   display: flex;
- background: #1dc4e0;
+  background: #1dc4e0;
 }
 
-.carro{
+.carro {
   border-radius: 10px;
   flex: 1;
   overflow: hidden;
   width: 50vw;
 }
 
-.carrusel{
-width: 400vw;
-height: 800px;
-display: flex;
-gap:20px
+.carrusel {
+  width: 400vw;
+  height: 800px;
+  display: flex;
+  gap: 20px;
 }
 
-.carrusel input{
+.carrusel input {
   display: none;
 }
 
-.imag{
+.imag {
   height: 100%;
   width: 50vw;
-transition: 2s;
+  transition: 2s;
 }
-.imag1{
+.imag1 {
   height: 100%;
   width: 50vw;
-transition: 2s;
+  transition: 2s;
 }
 
-.imag img{
+.imag img {
   width: 100%;
   height: 100%;
 }
-.imag1 img{
+.imag1 img {
   width: 100%;
   height: 100%;
 }
 /* CSS navegacion manual*/
 
-.navegacionmanual{
+.navegacionmanual {
   position: absolute;
   width: 50vw;
   display: flex;
   justify-content: center;
 }
 
-.manual-btn{
+.manual-btn {
   border: 2px solid var(--color-two);
   padding: 5px;
   border-radius: 10px;
@@ -271,137 +269,137 @@ transition: 2s;
   margin-top: 763px;
 }
 
-.manual-btn:not(:last-child){
+.manual-btn:not(:last-child) {
   margin-right: 40px;
 }
 
-.manual-btn:hover{
+.manual-btn:hover {
   background: #1dc4e0;
-  }
+}
 
-#radio1:checked ~ .imag1{
+#radio1:checked ~ .imag1 {
   margin-left: 0%;
 }
-#radio2:checked ~ .imag1{
+#radio2:checked ~ .imag1 {
   margin-left: -52.5vw;
 }
-#radio3:checked ~ .imag1{
+#radio3:checked ~ .imag1 {
   margin-left: -105vw;
 }
 
-.info-prod{
+.info-prod {
   flex: 1;
 }
 
-.titulo-art{
+.titulo-art {
   text-align: center;
 }
 
-.descripcion{
+.descripcion {
   padding: 20px;
   justify-content: center;
 }
 
-.talle{
+.talle {
   padding: 20px;
 }
-.precio-art{
+.precio-art {
   padding: 20px;
   color: green;
 }
 
-.btn-add{
+.btn-add {
   margin-left: 20px;
   background-color: yellow;
   border-radius: 10px;
 }
 
-#radio4:checked ~ .imag1{
+#radio4:checked ~ .imag1 {
   margin-left: 0%;
 }
-#radio5:checked ~ .imag1{
+#radio5:checked ~ .imag1 {
   margin-left: -52.5vw;
 }
-#radio6:checked ~ .imag1{
+#radio6:checked ~ .imag1 {
   margin-left: -105vw;
 }
 
-#radio7:checked ~ .imag1{
+#radio7:checked ~ .imag1 {
   margin-left: 0%;
 }
-#radio8:checked ~ .imag1{
+#radio8:checked ~ .imag1 {
   margin-left: -52.5vw;
 }
-#radio9:checked ~ .imag1{
+#radio9:checked ~ .imag1 {
   margin-left: -105vw;
 }
 
-#radio10:checked ~ .imag1{
+#radio10:checked ~ .imag1 {
   margin-left: 0%;
 }
-#radio11:checked ~ .imag1{
+#radio11:checked ~ .imag1 {
   margin-left: -52.5vw;
 }
-#radio12:checked ~ .imag1{
+#radio12:checked ~ .imag1 {
   margin-left: -105vw;
 }
 
-#radio13:checked ~ .imag1{
+#radio13:checked ~ .imag1 {
   margin-left: 0%;
 }
-#radio14:checked ~ .imag1{
+#radio14:checked ~ .imag1 {
   margin-left: -52.5vw;
 }
-#radio15:checked ~ .imag1{
+#radio15:checked ~ .imag1 {
   margin-left: -105vw;
 }
 
-#radio16:checked ~ .imag1{
+#radio16:checked ~ .imag1 {
   margin-left: 0%;
 }
-#radio17:checked ~ .imag1{
+#radio17:checked ~ .imag1 {
   margin-left: -52.5vw;
 }
-#radio18:checked ~ .imag1{
+#radio18:checked ~ .imag1 {
   margin-left: -105vw;
 }
 
-#radio19:checked ~ .imag1{
+#radio19:checked ~ .imag1 {
   margin-left: 0%;
 }
-#radio20:checked ~ .imag1{
+#radio20:checked ~ .imag1 {
   margin-left: -52.5vw;
 }
-#radio21:checked ~ .imag1{
+#radio21:checked ~ .imag1 {
   margin-left: -105vw;
 }
 
-#radio22:checked ~ .imag1{
+#radio22:checked ~ .imag1 {
   margin-left: 0%;
 }
-#radio23:checked ~ .imag1{
+#radio23:checked ~ .imag1 {
   margin-left: -52.5vw;
 }
-#radio24:checked ~ .imag1{
+#radio24:checked ~ .imag1 {
   margin-left: -105vw;
 }
 
-#radio25:checked ~ .imag1{
+#radio25:checked ~ .imag1 {
   margin-left: 0%;
 }
-#radio26:checked ~ .imag1{
+#radio26:checked ~ .imag1 {
   margin-left: -52.5vw;
 }
-#radio27:checked ~ .imag1{
+#radio27:checked ~ .imag1 {
   margin-left: -105vw;
 }
 
-#radio28:checked ~ .imag1{
+#radio28:checked ~ .imag1 {
   margin-left: 0%;
 }
-#radio29:checked ~ .imag1{
+#radio29:checked ~ .imag1 {
   margin-left: -52.5vw;
 }
-#radio30:checked ~ .imag1{
+#radio30:checked ~ .imag1 {
   margin-left: -105vw;
 }

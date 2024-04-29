@@ -81,7 +81,7 @@
     width: fit-content;
     transition: all 1s;
   }
-  .li-nav:hover {
+  .b-bottom-style:hover {
     border-bottom: 1px solid #e74c18;
   }
 
