@@ -195,8 +195,24 @@ li {
   header {
     display: block;
   }
-  /*Se oculta el menu */
-  .ul-nav {
+  /* Estilos al boton del carrito */
+  .radio-btn {
+    width: 2rem;
+    height: 2rem;
+    background-color: #e74c18;
+    border: 3px solid #1dc4e0;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  /* Cambio de estilos al posicionar el raton sobre él */
+  .carrito:hover {
+    background-color: #eddfa7;
+    border: 3px solid #e74c18;
+  }
+  /*Saco el menu mobile*/
+  .burger {
     display: none;
     width: fit-content;
   }
@@ -239,27 +255,31 @@ li {
     cursor: pointer;
   }
 }
-
 /*BANNER*/
 #banner {
   background-image: url("./img/Banner-CA.jpg");
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 80vh;
   box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.5);
+  width: 100%;
+  /*aspect-ratio: auto 425 / 200;*/
 }
 /*alineamos h2*/
 .card-banner {
   margin: 0 auto;
-  text-align: center;
+  /* text-align: center;*/
+  display: flex;
+  justify-content: space-between; /* Alineación horizontal centrada */
+  align-items: center; /* Alineación vertical centrada */
   font-family: var(--primary-font);
   color: var(--color-one);
   font-size: 30px;
 }
 /*Estilos al form de búsquedas*/
 .input-search {
-  background-color: var(--bg-input-color);
-  border: 2px solid var(--white-color);
+  background-color: var(--color-five);
+  border: 2px solid var(--color-two);
   border-radius: 25px;
   font-size: 1rem;
   height: 50px;
@@ -267,25 +287,41 @@ li {
   padding: 0px 20px;
   width: 70%;
   font-family: var(--primary-font);
-  color: var(--color-five);
+}
+.input-search:hover {
+  background-color: var(--color-one);
+  border: 3px solid;
 }
 
 .articulo-item-detail {
   width: 100%;
-  font-size: 0, 5%;
+  font-size: 1%;
 }
 .img-prod {
-  width: 200px;
+  width: 300px;
   height: 300px;
   object-fit: cover;
+  display: inline-block;
+  margin-bottom: 50px;
+  /*width: 31.5%;*/
+  position: relative;
+  vertical-align: top;
+  text-align: left;
 }
 /*posicionamos el contenedor de los títulos*/
 .container {
-  max-width: 1200px; /*el elemento nunca será más ancho que el valor especificado 
-  en max-width*/
+  max-width: 1200px;
   margin: 0 auto;
 }
 h2 {
   color: var(--color-two);
   font-size: 2rem;
+}
+div.articulo-item {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 100%;
 }
