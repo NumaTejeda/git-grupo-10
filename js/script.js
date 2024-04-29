@@ -15,3 +15,8 @@ function openClose() {
         nav.style.display = "none" // Vuelvo a ocultar el nav
     }
 }
+
+
+// script carrusel
+// const grande = document.querySelector{'.grande'}
+
