@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-        @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-    </style>
+    <style>@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");</style>
     <title>Document</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32-circule.png" id="favicon" />
 </head>
@@ -29,53 +27,528 @@
             </ul>
         </nav>
     </header>
-
+    <main>
     <!-- articulo 01 calza -->
     <section id="calza"> 
-        <div class="carro">
-            <!-- botones -->
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <!-- imagenes -->
-            <div class="imag1">
-                <img src="/img/CALZA1.jpg" alt="">
-            </div>
-            <div class="imag">
-                <img src="/img/CALZA3.jpg" alt="">
-            </div>
-            <div class="imag">
-                <img src="/img/CALZA2.jpg" alt="">
-            </div>
-            <!-- navegacion -->
-            <div class="navegacionmanual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
+        <div class="art">
+            <div class="carro">
+                <div class="carrusel">
+                    <!-- botones -->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <!-- imagenes -->
+                    <div class="imag1">
+                        <img src="/img/CALZA1.jpg" alt="">
+                    </div>
+                    <div class="imag">
+                        <img src="/img/CALZA3.jpg" alt="">
+                    </div>
+                    <div class="imag">
+                        <img src="/img/CALZA2.jpg" alt="">
+                    </div>
+                    <!-- navegacion -->
+                    <div class="navegacionmanual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                    </div>
+                </div>
             </div>
             <!-- descripcion -->
             <div class="info-prod">
                 <h2 class="titulo-art">Calza Termica Hombre</h2>
                 <div class="descripcion">
-                    <p>
-                        Calza termica para hombres, ideal deporte ciclismo - running- etc
-                    </p>
+                <p>Calza termica para hombres, ideal deporte ciclismo - running- etc</p>
                 </div>
-            <!-- seleccion de talle -->
+                <!-- seleccion de talle -->
                 <div class="talle">
-                    <span>S</span>
-                    <span>M</span>
-                    <span>L</span>
-                    <span>XL</span>
-                    <span>XXL</span>
+                <label for="talle">Talle</label>
+                <select name="talle" id="talle">
+                    <option disabled selected value="">Selecciona tu talle</option>
+                    <option value="38">38</option>
+                    <option value="40">40</option>
+                    <option value="42">42</option>
+                    <option value="44">44</option>
+                    <option value="46">46</option>
+                    <option value="48">48</option>
+                </select>
                 </div>
                 <p class="precio-art">$ 18.000,00</p>
                 <button class="btn-add">Añade al Carrito</button>
+            </div>
         </div>
     </section>
 
+    <!-- articulo 02 short-calza -->
+    <section id="short-calza"> 
+        <div class="art">
+            <div class="carro">
+                <div class="carrusel">
+                    <!-- botones -->
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <input type="radio" name="radio-btn" id="radio5">
+                    <input type="radio" name="radio-btn" id="radio6">
+                    <!-- imagenes -->
+                    <div class="imag1">
+                        <img src="/img/SHORTCALZA1.jpg" alt="">
+                    </div>
+                    <div class="imag">
+                        <img src="/img/SHORTCALZA2.jpg" alt="">
+                    </div>
+                    <div class="imag">
+                        <img src="/img/SHORTCALZA3.jpeg" alt="">
+                    </div>
+                    <!-- navegacion -->
+                    <div class="navegacionmanual">
+                        <label for="radio4" class="manual-btn"></label>
+                        <label for="radio5" class="manual-btn"></label>
+                        <label for="radio6" class="manual-btn"></label>
+                    </div>
+                </div>
+            </div>
+            <!-- descripcion -->
+            <div class="info-prod">
+                <h2 class="titulo-art">Short hombre con calza deportivo</h2>
+                <div class="descripcion">
+                <p>Short con calza termica para hombres, ideal deporte ciclismo - running- etc</p>
+                </div>
+                <!-- seleccion de talle -->
+                <div class="talle">
+                <label for="talle">Talle</label>
+                <select name="talle" id="talle">
+                    <option disabled selected value="">Selecciona tu talle</option>
+                    <option value="38">38</option>
+                    <option value="40">40</option>
+                    <option value="42">42</option>
+                    <option value="44">44</option>
+                    <option value="46">46</option>
+                    <option value="48">48</option>
+                </select>
+                </div>
+                <p class="precio-art">$ 18.000,00</p>
+                <button class="btn-add">Añade al Carrito</button>
+            </div>
+        </div>
+    </section>
+
+        <!-- articulo 03 Zapatilla-hombre -->
+        <section id="zap-hombre"> 
+            <div class="art">
+                <div class="carro">
+                    <div class="carrusel">
+                        <!-- botones -->
+                        <input type="radio" name="radio-btn" id="radio7">
+                        <input type="radio" name="radio-btn" id="radio8">
+                        <input type="radio" name="radio-btn" id="radio9">
+                        <!-- imagenes -->
+                        <div class="imag1">
+                            <img src="/img/Zapat-runner.jpg" alt="">
+                        </div>
+                        <div class="imag">
+                            <img src="/img/zapat-runner1.jpeg" alt="">
+                        </div>
+                        <div class="imag">
+                            <img src="/img/zapat-runner2.jpeg" alt="">
+                        </div>
+                        <!-- navegacion -->
+                        <div class="navegacionmanual">
+                            <label for="radio7" class="manual-btn"></label>
+                            <label for="radio8" class="manual-btn"></label>
+                            <label for="radio9" class="manual-btn"></label>
+                        </div>
+                    </div>
+                </div>
+                <!-- descripcion -->
+                <div class="info-prod">
+                    <h2 class="titulo-art">zapatillas deportivas para hombre</h2>
+                    <div class="descripcion">
+                    <p>zapatilla deportiva para hombres, ideal deporte ciclismo - running- etc</p>
+                    </div>
+                    <!-- seleccion de talle -->
+                    <div class="talle">
+                    <label for="talle">Talle</label>
+                    <select name="talle" id="talle">
+                        <option disabled selected value="">Selecciona tu talle</option>
+                        <option value="38">38</option>
+                        <option value="40">40</option>
+                        <option value="42">42</option>
+                        <option value="44">44</option>
+                        <option value="46">46</option>
+                        <option value="48">48</option>
+                    </select>
+                    </div>
+                    <p class="precio-art">$ 18.000,00</p>
+                    <button class="btn-add">Añade al Carrito</button>
+                </div>
+            </div>
+        </section>
+     
+        <!-- articulo 04 Remera-hombre-running -->
+        <section id="rem-hombre"> 
+            <div class="art">
+                <div class="carro">
+                    <div class="carrusel">
+                        <!-- botones -->
+                        <input type="radio" name="radio-btn" id="radio10">
+                        <input type="radio" name="radio-btn" id="radio11">
+                        <input type="radio" name="radio-btn" id="radio12">
+                        <!-- imagenes -->
+                        <div class="imag1">
+                            <img src="/img/Remera-running.jpg" alt="">
+                        </div>
+                        <div class="imag">
+                            <img src="/img/remera-running1.jpeg" alt="">
+                        </div>
+                        <div class="imag">
+                            <img src="/img/remera-running2.jpeg" alt="">
+                        </div>
+                        <!-- navegacion -->
+                        <div class="navegacionmanual">
+                            <label for="radio10" class="manual-btn"></label>
+                            <label for="radio11" class="manual-btn"></label>
+                            <label for="radio12" class="manual-btn"></label>
+                        </div>
+                    </div>
+                </div>
+                <!-- descripcion -->
+                <div class="info-prod">
+                    <h2 class="titulo-art">zapatillas deportivas para hombre</h2>
+                    <div class="descripcion">
+                    <p>zapatilla deportiva para hombres, ideal deporte ciclismo - running- etc</p>
+                    </div>
+                    <!-- seleccion de talle -->
+                    <div class="talle">
+                    <label for="talle">Talle</label>
+                    <select name="talle" id="talle">
+                        <option disabled selected value="">Selecciona tu talle</option>
+                        <option value="38">38</option>
+                        <option value="40">40</option>
+                        <option value="42">42</option>
+                        <option value="44">44</option>
+                        <option value="46">46</option>
+                        <option value="48">48</option>
+                    </select>
+                    </div>
+                    <p class="precio-art">$ 18.000,00</p>
+                    <button class="btn-add">Añade al Carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- articulo 05 campera-mujer -->
+        <section id="cam-mujer"> 
+            <div class="art">
+                <div class="carro">
+                    <div class="carrusel">
+                        <!-- botones -->
+                        <input type="radio" name="radio-btn" id="radio13">
+                        <input type="radio" name="radio-btn" id="radio14">
+                        <input type="radio" name="radio-btn" id="radio15">
+                        <!-- imagenes -->
+                        <div class="imag1">
+                            <img src="/img/campera-mujer.jpg" alt="">
+                        </div>
+                        <div class="imag">
+                            <img src="/img/campera-mujer1.jpeg" alt="">
+                        </div>
+                        <div class="imag">
+                            <img src="/img/campera-mujer2.jpeg" alt="">
+                        </div>
+                        <!-- navegacion -->
+                        <div class="navegacionmanual">
+                            <label for="radio13" class="manual-btn"></label>
+                            <label for="radio14" class="manual-btn"></label>
+                            <label for="radio15" class="manual-btn"></label>
+                        </div>
+                    </div>
+                </div>
+                <!-- descripcion -->
+                <div class="info-prod">
+                    <h2 class="titulo-art">Campera invierno mujer</h2>
+                    <div class="descripcion">
+                    <p>zapatilla deportiva para hombres, ideal deporte ciclismo - running- etc</p>
+                    </div>
+                    <!-- seleccion de talle -->
+                    <div class="talle">
+                    <label for="talle">Talle</label>
+                    <select name="talle" id="talle">
+                        <option disabled selected value="">Selecciona tu talle</option>
+                        <option value="38">38</option>
+                        <option value="40">40</option>
+                        <option value="42">42</option>
+                        <option value="44">44</option>
+                        <option value="46">46</option>
+                        <option value="48">48</option>
+                    </select>
+                    </div>
+                    <p class="precio-art">$ 18.000,00</p>
+                    <button class="btn-add">Añade al Carrito</button>
+                </div>
+            </div>
+        </section>
+
+            <!-- articulo 06 zapatilla-mujer -->
+                <section id="zap-mujer"> 
+                    <div class="art">
+                        <div class="carro">
+                            <div class="carrusel">
+                                <!-- botones -->
+                                <input type="radio" name="radio-btn" id="radio16">
+                                <input type="radio" name="radio-btn" id="radio17">
+                                <input type="radio" name="radio-btn" id="radio18">
+                                <!-- imagenes -->
+                                <div class="imag1">
+                                    <img src="/img/zapatillas-mujer.jpg" alt="">
+                                </div>
+                                <div class="imag">
+                                    <img src="/img/zapatillas-mujer1.jpeg" alt="">
+                                </div>
+                                <div class="imag">
+                                    <img src="/img/zapatillas-mujer2.jpeg" alt="">
+                                </div>
+                                <!-- navegacion -->
+                                <div class="navegacionmanual">
+                                    <label for="radio16" class="manual-btn"></label>
+                                    <label for="radio17" class="manual-btn"></label>
+                                    <label for="radio18" class="manual-btn"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- descripcion -->
+                        <div class="info-prod">
+                            <h2 class="titulo-art">zapatilla running mujer</h2>
+                            <div class="descripcion">
+                            <p>zapatilla deportiva para hombres, ideal deporte ciclismo - running- etc</p>
+                            </div>
+                            <!-- seleccion de talle -->
+                            <div class="talle">
+                            <label for="talle">Talle</label>
+                            <select name="talle" id="talle">
+                                <option disabled selected value="">Selecciona tu talle</option>
+                                <option value="38">38</option>
+                                <option value="40">40</option>
+                                <option value="42">42</option>
+                                <option value="44">44</option>
+                                <option value="46">46</option>
+                                <option value="48">48</option>
+                            </select>
+                            </div>
+                            <p class="precio-art">$ 18.000,00</p>
+                            <button class="btn-add">Añade al Carrito</button>
+                        </div>
+                    </div>
+                </section>
+
+        <!-- articulo 07 mochila -->
+        <section id="mochila"> 
+            <div class="art">
+                <div class="carro">
+                    <div class="carrusel">
+                        <!-- botones -->
+                        <input type="radio" name="radio-btn" id="radio19">
+                        <input type="radio" name="radio-btn" id="radio20">
+                        <input type="radio" name="radio-btn" id="radio21">
+                        <!-- imagenes -->
+                        <div class="imag1">
+                            <img src="/img/mochila-25-lts.jpg" alt="">
+                        </div>
+                        <div class="imag">
+                            <img src="/img/mochila-25-lts1.jpeg" alt="">
+                        </div>
+                        <div class="imag">
+                            <img src="/img/mochila-25-lts2.jpeg" alt="">
+                        </div>
+                        <!-- navegacion -->
+                        <div class="navegacionmanual">
+                            <label for="radio19" class="manual-btn"></label>
+                            <label for="radio20" class="manual-btn"></label>
+                            <label for="radio21" class="manual-btn"></label>
+                        </div>
+                    </div>
+                </div>
+                <!-- descripcion -->
+                <div class="info-prod">
+                    <h2 class="titulo-art">mochila running</h2>
+                    <div class="descripcion">
+                    <p>zapatilla deportiva para hombres, ideal deporte ciclismo - running- etc</p>
+                    </div>
+                    <!-- seleccion de talle -->
+                    <div class="talle">
+                    <label for="talle">Talle</label>
+                    <select name="talle" id="talle">
+                        <option disabled selected value="">Selecciona tu talle</option>
+                        <option value="38">38</option>
+                        <option value="40">40</option>
+                        <option value="42">42</option>
+                        <option value="44">44</option>
+                        <option value="46">46</option>
+                        <option value="48">48</option>
+                    </select>
+                    </div>
+                    <p class="precio-art">$ 18.000,00</p>
+                    <button class="btn-add">Añade al Carrito</button>
+                </div>
+            </div>
+        </section>
 
 
+        <!-- articulo 08 matera -->
+        <section id="matera"> 
+            <div class="art">
+                <div class="carro">
+                    <div class="carrusel">
+                        <!-- botones -->
+                        <input type="radio" name="radio-btn" id="radio22">
+                        <input type="radio" name="radio-btn" id="radio23">
+                        <input type="radio" name="radio-btn" id="radio24">
+                        <!-- imagenes -->
+                        <div class="imag1">
+                            <img src="/img/matera-grande.jpg" alt="">
+                        </div>
+                        <div class="imag">
+                            <img src="/img/matera-grande1.jpeg" alt="">
+                        </div>
+                        <div class="imag">
+                            <img src="/img/matera-grande2.jpeg" alt="">
+                        </div>
+                        <!-- navegacion -->
+                        <div class="navegacionmanual">
+                            <label for="radio22" class="manual-btn"></label>
+                            <label for="radio23" class="manual-btn"></label>
+                            <label for="radio24" class="manual-btn"></label>
+                        </div>
+                    </div>
+                </div>
+                <!-- descripcion -->
+                <div class="info-prod">
+                    <h2 class="titulo-art">matera</h2>
+                    <div class="descripcion">
+                    <p>zapatilla deportiva para hombres, ideal deporte ciclismo - running- etc</p>
+                    </div>
+                    <!-- seleccion de talle -->
+                    <div class="talle">
+                    <label for="talle">Talle</label>
+                    <select name="talle" id="talle">
+                        <option disabled selected value="">Selecciona tu talle</option>
+                        <option value="38">38</option>
+                        <option value="40">40</option>
+                        <option value="42">42</option>
+                        <option value="44">44</option>
+                        <option value="46">46</option>
+                        <option value="48">48</option>
+                    </select>
+                    </div>
+                    <p class="precio-art">$ 18.000,00</p>
+                    <button class="btn-add">Añade al Carrito</button>
+                </div>
+            </div>
+        </section>
+
+                <!-- articulo 09 sandalias -->
+                <section id="sandalia"> 
+                    <div class="art">
+                        <div class="carro">
+                            <div class="carrusel">
+                                <!-- botones -->
+                                <input type="radio" name="radio-btn" id="radio25">
+                                <input type="radio" name="radio-btn" id="radio26">
+                                <input type="radio" name="radio-btn" id="radio27">
+                                <!-- imagenes -->
+                                <div class="imag1">
+                                    <img src="/img/sandalias-nino.jpg" alt="">
+                                </div>
+                                <div class="imag">
+                                    <img src="/img/sandalias-nino1.jpeg" alt="">
+                                </div>
+                                <div class="imag">
+                                    <img src="/img/sandalias-nino2.jpeg" alt="">
+                                </div>
+                                <!-- navegacion -->
+                                <div class="navegacionmanual">
+                                    <label for="radio25" class="manual-btn"></label>
+                                    <label for="radio26" class="manual-btn"></label>
+                                    <label for="radio27" class="manual-btn"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- descripcion -->
+                        <div class="info-prod">
+                            <h2 class="titulo-art">sandalias</h2>
+                            <div class="descripcion">
+                            <p>zapatilla deportiva para hombres, ideal deporte ciclismo - running- etc</p>
+                            </div>
+                            <!-- seleccion de talle -->
+                            <div class="talle">
+                            <label for="talle">Talle</label>
+                            <select name="talle" id="talle">
+                                <option disabled selected value="">Selecciona tu talle</option>
+                                <option value="38">38</option>
+                                <option value="40">40</option>
+                                <option value="42">42</option>
+                                <option value="44">44</option>
+                                <option value="46">46</option>
+                                <option value="48">48</option>
+                            </select>
+                            </div>
+                            <p class="precio-art">$ 18.000,00</p>
+                            <button class="btn-add">Añade al Carrito</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- articulo 10 campera-hombre -->
+                <section id="campera-hombre"> 
+                    <div class="art">
+                        <div class="carro">
+                            <div class="carrusel">
+                                <!-- botones -->
+                                <input type="radio" name="radio-btn" id="radio28">
+                                <input type="radio" name="radio-btn" id="radio29">
+                                <input type="radio" name="radio-btn" id="radio30">
+                                <!-- imagenes -->
+                                <div class="imag1">
+                                    <img src="/img/Campera-Polar-1.jpg" alt="">
+                                </div>
+                                <div class="imag">
+                                    <img src="/img/Campera-Polar2.jpeg" alt="">
+                                </div>
+                                <div class="imag">
+                                    <img src="/img/Campera-Polar3.jpeg" alt="">
+                                </div>
+                                <!-- navegacion -->
+                                <div class="navegacionmanual">
+                                    <label for="radio28" class="manual-btn"></label>
+                                    <label for="radio29" class="manual-btn"></label>
+                                    <label for="radio30" class="manual-btn"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- descripcion -->
+                        <div class="info-prod">
+                            <h2 class="titulo-art">campera polar</h2>
+                            <div class="descripcion">
+                            <p>zapatilla deportiva para hombres, ideal deporte ciclismo - running- etc</p>
+                            </div>
+                            <!-- seleccion de talle -->
+                            <div class="talle">
+                            <label for="talle">Talle</label>
+                            <select name="talle" id="talle">
+                                <option disabled selected value="">Selecciona tu talle</option>
+                                <option value="38">38</option>
+                                <option value="40">40</option>
+                                <option value="42">42</option>
+                                <option value="44">44</option>
+                                <option value="46">46</option>
+                                <option value="48">48</option>
+                            </select>
+                            </div>
+                            <p class="precio-art">$ 18.000,00</p>
+                            <button class="btn-add">Añade al Carrito</button>
+                        </div>
+                    </div>
+                </section>
+    </main> 
 
     <footer class="menu-footer">
         <nav class="nav-footer">
