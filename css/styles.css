@@ -232,6 +232,10 @@ li {
     position: fixed;
     left: 0;
   }
+  .ul-nav {
+    display: none;
+    width: fit-content;
+  }
   /*Centrado de las opciones dle menu*/
   .li-nav {
     display: flex;

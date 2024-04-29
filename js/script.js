@@ -2,7 +2,7 @@
 function openClose() {
     const menu = document.getElementById("menu") // Obtengo el elemento con id = menu
     const burger = document.querySelector('.menu-icon') //obtengo el elemento con clase .menu-icon
-    const nav = document.querySelector('nav') // obtengo la etiqueta nav
+    const nav = document.querySelector('.nav-menu') // obtengo la etiqueta nav
     //Open
     if (nav.style.display === "none") {
         menu.className = "active" // Agrego clase .active a menu
@@ -15,8 +15,4 @@ function openClose() {
         nav.style.display = "none" // Vuelvo a ocultar el nav
     }
 }
-
-
-// script carrusel
-// const grande = document.querySelector{'.grande'}
 
