@@ -8,17 +8,17 @@
 }
 
 body {
-  background-color: #e74c18;
+  background-color: var(--color-one);
   overflow-x: hidden;
 }
 .main-form {
   height: fit-content;
-  background-color: #e74c18;
+  background-color: var(--color-one);
   margin-bottom: 17vh;
 }
 .img-form {
   position: relative;
-  background-color: #e74c18;
+  background-color: var(--color-one);
   width: 100vw;
 }
 .text-container {
@@ -33,7 +33,7 @@ body {
 }
 .text-img {
   min-width: 80%;
-  color: #eddfa7;
+  color: var(--color-tree);
   font-weight: 600;
   padding: 2vw;
   margin: 15% auto;
@@ -44,7 +44,7 @@ body {
   margin: 0 5vw;
   height: fit-content;
   padding: 3vh 3vw;
-  background-color: #061524;
+  background-color: var(--color-two);
   border-radius: 4px;
   z-index: 1; /*Esto esta para superponer el formulario con la imagen */
 }
@@ -76,10 +76,10 @@ button {
 
 input:not([type="radio"]),
 textarea {
-  background-color: #1dc4e0;
+  background-color: var(--color-tree);
   padding-left: 3vw;
   font-weight: 600;
-  color: #e74c18;
+  color: var(--color-one);
 }
 textarea {
   padding: 1vh 3vw;
@@ -88,7 +88,7 @@ textarea {
 .box-form label {
   position: absolute;
   z-index: 1111;
-  color: #061524;
+  color: var(--color-two);
   margin-left: 2vw;
   font-weight: 600;
 }
@@ -96,14 +96,14 @@ textarea {
 .box-form input:focus + label,
 .box-form input:valid + label {
   transform: translate(2px, -27px);
-  color: white;
+  color: var(--color-tree)
 }
 label {
   transition: all 2s;
 }
 
 .btn-submit {
-  background-color: #061524;
+  background-color: var(--color-two);
   border: 2px solid #1dc4e0;
   border-radius: 4px;
   color: #eddfa7;
@@ -112,8 +112,8 @@ label {
 }
 
 .btn-submit:hover {
-  background-color: #e74c18;
-  border: 2px solid #eddfa7;
+  background-color: var(--color-one);
+  border: 2px solid var(--color-tree);
   color: #061524;
   font-weight: 800;
 }
@@ -122,7 +122,7 @@ textarea {
   outline: none;
   border: 1px solid;
   border-radius: 5px;
-  border-color: #1dc4e0;
+  border-color: var(--color-four);
   transition: all 0.5s;
 }
 input[type="radio"] {
@@ -133,18 +133,18 @@ input[type="radio"] {
   margin: 2vh auto;
 }
 .radio-btn input:checked + label {
-  color: #e74c18;
+  color: var(--color-one);
   font-weight: 800;
 }
 label {
-  color: #eddfa7;
+  color: var(--color-tree);
 }
 .box-form input:focus,
 .box-form input:valid,
 textarea:focus,
 label:focus {
-  border: 1px solid #061524;
-  box-shadow: 0 0 5px blue; /* Cambia el color del borde interior al recibir foco */
+  border: 1px solid var(--color-two);
+  box-shadow: 0 0 5px var(--color-two); /* Cambia el color del borde interior al recibir foco */
 }
 .form-group {
   position: relative;
