@@ -269,10 +269,10 @@ li {
 /* .card-banner {
   margin: 0 auto;
   /* text-align: center;*/
-  display: flex;
+  /*display: flex;
   justify-content: space-between; /* Alineación horizontal centrada */
-  align-items: center; /* Alineación vertical centrada */
-  font-family: var(--primary-font);
+  /*align-items: center; /* Alineación vertical centrada */
+  /*font-family: var(--primary-font);
   color: var(--color-one);
   font-size: 30px;
 } */
