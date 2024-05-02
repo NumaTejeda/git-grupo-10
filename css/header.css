@@ -40,6 +40,7 @@ header {
   display: flex;
   padding: 0;
   width: fit-content;
+  margin-bottom: 0 !important; /*Soluciona conflicto con boostrap*/
 }
 .li-nav {
   list-style: none;
@@ -51,10 +52,11 @@ header {
 .b-bottom-style:hover {
   border-bottom: 1px solid #e74c18;
 }
+/*Conflicto con estilos de boostrap a los <a> por eso agrego !important*/
 a {
-  font-size: 1rem;
-  color: #1dc4e0;
-  text-decoration: none;
+  font-size: 1rem !important;
+  color: #1dc4e0 !important;
+  text-decoration: none !important;
 }
 /* Estilos al boton del carrito */
 .carrito {
@@ -76,7 +78,6 @@ a {
 .burger {
   display: none;
 }
-
 
 /* Mobile pantalla menores a 696px*/
 

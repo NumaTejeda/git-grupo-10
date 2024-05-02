@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 /* Variables globales */
 :root {
   --color-one: #e74c18;
@@ -6,87 +8,14 @@
   --color-four: #1dc4e0;
   --color-five: #fdf5ef;
   /*fuente */
- --primary-font:'Montserrat', sans-serif;
+  --primary-font: "Montserrat", sans-serif;
 }
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
-/* Obtengo la tipografia */
-  @font-face {
-    font-family: "sport";
-    src: url("./tipografias/Sportesia.otf") format("opentype");
-  }
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    font-size: 20px;
-    font-family: "Montserrat", sans-serif;
-  }
-  html {
-    height: 100vh;
-    width: 100vw;
-  }
-  body {
-    padding-top: 6rem;
-    position: relative;
-    padding-bottom: 6rem;
-    min-height: 100vh;
-  }
-  /* Da estilos al header y lo fija para cuando se haga scroll */
-  header {
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    padding: 0.5rem;
-    min-height: 4rem;
-    width: 100vw;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #061524;
-    z-index: 100;
-  }
-  /*Contenedor de logo y lema */
-  .logo-container {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  /*Fijo el ancho del logo y el alto queda libre guardando las relaciones con el ancho.*/
-  .logo {
-    width: 3rem;
-  }
-    /* Doy estilos y lo despego un poco del logo */
-    .lema {
-      margin-left: 1rem;
-      color: #1dc4e0;
-      font-family: "sport";
-      font-size: 1.5rem;
-      margin-top: 0.5rem;
-    }
-  /*El nav toma el ancho del conteido que tenga */
-  .nav-menu {
-    width: fit-content;
-  }
-  /* Doy estilos al ul y li */
-  .ul-nav {
-    display: flex;
-    padding: 0;
-    width: fit-content;
-  }
-  .li-nav {
-    list-style: none;
-    margin: 0.5rem;
-    align-self: center;
-    width: fit-content;
-    transition: all 1s;
-  }
-  .b-bottom-style:hover {
-    border-bottom: 1px solid #e74c18;
-  }
-  /*Estilos al link */
-  a {
-    font-size: 1rem;
-    color: #1dc4e0;
-    text-decoration: none;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  padding-top: 3vh;
+}

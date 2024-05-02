@@ -12,6 +12,7 @@ body {
   overflow-x: hidden;
 }
 .main-form {
+  padding-top: 4vh;
   height: fit-content;
   background-color: var(--color-one);
   margin-bottom: 17vh;
@@ -96,7 +97,7 @@ textarea {
 .box-form input:focus + label,
 .box-form input:valid + label {
   transform: translate(2px, -27px);
-  color: var(--color-tree)
+  color: var(--color-tree);
 }
 label {
   transition: all 2s;
