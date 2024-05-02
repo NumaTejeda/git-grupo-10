@@ -24,7 +24,7 @@ html {
   width: 100vw;
 }
 body {
-  padding-top: 6rem;
+  padding-top: 4rem;
   position: relative;
   padding-bottom: 6rem;
   min-height: 100vh;
@@ -94,5 +94,9 @@ body {
     top: 2.5vh;
     right: 2.5vw;
     cursor: pointer;
+  }
+  /*CSS de las cards del index */
+  .container {
+     display: flex;
   }
 }

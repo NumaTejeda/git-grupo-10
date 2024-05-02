@@ -1,6 +1,6 @@
 /*BANNER*/
 #banner {
-  background-image: url("./img/Banner-CA.jpg");
+  background-image: url("../img/Banner-CA.jpg");
   background-size: cover;
   background-position: center;
   height: 80vh;
@@ -13,12 +13,14 @@
   margin: 0 auto;
   /* text-align: center;*/
   display: flex;
-  justify-content: space-between; /* Alineación horizontal centrada */
+  justify-content: center; /* Alineación horizontal centrada */
   align-items: center; /* Alineación vertical centrada */
   font-family: var(--primary-font);
   color: var(--color-one);
   font-size: 30px;
+  height: 80vh;
 }
+
 /*Estilos al form de búsquedas*/
 .input-search {
   background-color: var(--color-five);
