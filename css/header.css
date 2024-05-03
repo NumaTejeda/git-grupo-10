@@ -18,6 +18,7 @@ header {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  margin-left: 1rem;
 }
 /*Fijo el ancho del logo y el alto queda libre guardando las relaciones con el ancho.*/
 .logo {
@@ -25,11 +26,11 @@ header {
 }
 /* Doy estilos y lo despego un poco del logo */
 .lema {
-  margin-left: 1rem;
   color: #1dc4e0;
   font-family: "sport";
   font-size: 1.5rem;
   margin-top: 0.5rem;
+  margin-left: 0.5rem;
 }
 /*El nav toma el ancho del conteido que tenga */
 .nav-menu {
@@ -78,6 +79,16 @@ a {
 .burger {
   display: none;
 }
+.close {
+  background-image: url(../img/menu-close.svg);
+  background-size: cover;
+  height: 7vh;
+}
+.open {
+  background-image: url(../img/menu-open.svg);
+  background-size: cover;
+  height: 7vh;
+}
 
 /* Mobile pantalla menores a 696px*/
 
@@ -85,6 +96,13 @@ a {
   /*Display block ubica los elementos uno abajo del otro*/
   header {
     display: block;
+  }
+  .logo-container {
+    justify-content: space-between;
+    margin-left: 0;
+  }
+  .lema {
+    margin-left: 0;
   }
   /* Estilos al boton del carrito */
   .radio-btn {
@@ -97,11 +115,6 @@ a {
   .carrito:hover {
     background-color: #eddfa7;
     border: 3px solid #e74c18;
-  }
-  /*Saco el menu mobile*/
-  .burger {
-    display: none;
-    width: fit-content;
   }
   /*Esta clase se pone y se saca al apretar en el menu hamburguesa con javascript
     Se aplica al ul que en este estado esta oculto */
@@ -130,19 +143,12 @@ a {
     width: 100%;
     align-self: center;
   }
-  /*Tamaño*/
-  .menu-icon {
-    width: 2rem;
-  }
   /* Contenedor del icono del menu 
     Lo posiciono arriba a la derecha con postion absolute, top y right */
   .burger {
     display: block;
-    position: absolute;
-    width: 2rem;
-    min-width: 2rem;
-    top: 2.5vh;
-    right: 2.5vw;
+    width: fit-content;
+    min-width: 2.2rem;
     cursor: pointer;
   }
 }
