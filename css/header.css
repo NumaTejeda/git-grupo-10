@@ -7,7 +7,6 @@ header {
   width: 100vw;
   padding: 0.5rem;
   min-height: 4rem;
-  width: 100vw;
   justify-content: space-around;
   align-items: center;
   background-color: #061524;
@@ -79,16 +78,6 @@ a {
 .burger {
   display: none;
 }
-.close {
-  background-image: url(../img/menu-close.svg);
-  background-size: cover;
-  height: 7vh;
-}
-.open {
-  background-image: url(../img/menu-open.svg);
-  background-size: cover;
-  height: 7vh;
-}
 
 /* Mobile pantalla menores a 696px*/
 
@@ -117,7 +106,7 @@ a {
     border: 3px solid #e74c18;
   }
   /*Esta clase se pone y se saca al apretar en el menu hamburguesa con javascript
-    Se aplica al ul que en este estado esta oculto */
+  Se aplica al ul que en este estado esta oculto */
   .active {
     display: flex;
     flex-direction: column;
@@ -144,11 +133,21 @@ a {
     align-self: center;
   }
   /* Contenedor del icono del menu 
-    Lo posiciono arriba a la derecha con postion absolute, top y right */
+  Lo posiciono arriba a la derecha con postion absolute, top y right */
   .burger {
     display: block;
-    width: fit-content;
-    min-width: 2.2rem;
+    height: auto;
+    width: 2.5rem;
     cursor: pointer;
+  }
+  .close {
+    background-image: url(../img/menu-close.svg);
+    background-size: cover;
+    height: 2.5rem;
+  }
+  .open {
+    background-image: url(../img/menu-open.svg);
+    background-size: cover;
+    height: 2.5rem;
   }
 }
