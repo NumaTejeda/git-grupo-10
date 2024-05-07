@@ -79,13 +79,16 @@ a {
   display: none;
 }
 
-/* Mobile pantalla menores a 696px*/
+/* Mobile pantalla menores a 722px*/
 
 @media screen and (max-width: 722px) {
   /*Display block ubica los elementos uno abajo del otro*/
   header {
     display: block;
   }
+  /* .nav-menu {
+    display: none;
+  } */
   .logo-container {
     justify-content: space-between;
     margin-left: 0;
@@ -121,6 +124,7 @@ a {
     position: fixed;
     left: 0;
   }
+
   .ul-nav {
     display: none;
     width: fit-content;
