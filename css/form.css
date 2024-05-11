@@ -88,7 +88,7 @@ textarea {
 
 .box-form label {
   position: absolute;
-  z-index: 1111;
+  z-index: 99;
   color: var(--color-two);
   margin-left: 2vw;
   font-weight: 600;
