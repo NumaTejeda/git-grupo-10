@@ -67,16 +67,18 @@
         </div>
         <div class="box-form">
           <input type="text" id="mail" name="mail" autocomplete="on" required>
-          <label for="mail" id="mail2">E-mail</label>
+          <label for="mail" id="mail-label">E-mail</label>
         </div>
         <label>Buscas un producto en particular?</label>
         <div class="box-file">
           <input type="file" id="file" name="file" accept="image/png, image/jpeg" style="display: none">
           <label for="file" class="input-file" id="label-file">Selecciona una imagen</label>
         </div>
-        <label for="consulta">Tu consulta:</label> <br>
-        <textarea name="consulta" id="consulta" rows="2"></textarea><br>
-        <button type="submit" class="btn-submit">Enviar</button>
+        <div class="box-file">
+          <label for="consulta">Tu consulta:</label> <br>
+          <textarea name="consulta" id="consulta" rows="2" required></textarea><br>
+        </div>
+        <button type="submit" class="btn-submit" id="btn-submit" disabled>Enviar</button>
       </form>
     </div>
   </main>

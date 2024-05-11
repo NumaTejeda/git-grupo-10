@@ -100,7 +100,7 @@ textarea {
   color: var(--color-tree);
 }
 label:not([for="file"], [for="minorista"], [for="mayorista"]) {
-  transition: all 2s;
+  transition: all 1s;
 }
 
 .btn-submit {
