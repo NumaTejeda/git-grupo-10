@@ -1,5 +1,5 @@
+@import url("https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css");
 /* Mobile first - Form*/
-
 :root {
   --color-one: #e74c18;
   --color-two: #061524;
@@ -99,8 +99,8 @@ textarea {
   transform: translate(2px, -27px);
   color: var(--color-tree);
 }
-label {
-  transition: all 2s;
+label:not([for="file"], [for="minorista"], [for="mayorista"]) {
+  transition: all 1s;
 }
 
 .btn-submit {
@@ -135,7 +135,7 @@ input[type="radio"] {
 }
 .radio-btn input:checked + label {
   color: var(--color-one);
-  font-weight: 800;
+  font-weight: 600;
 }
 label {
   color: var(--color-tree);
@@ -145,11 +145,65 @@ label {
 textarea:focus,
 label:focus {
   border: 1px solid var(--color-two);
-  box-shadow: 0 0 5px var(--color-two); /* Cambia el color del borde interior al recibir foco */
+  box-shadow: 0 0 5px #1dc4e0; /* Cambia el color del borde interior al recibir foco */
 }
 .form-group {
   position: relative;
   margin-bottom: 1rem;
+}
+
+/*Input file style*/
+.input-file {
+  display: block;
+  background-color: #061524;
+  border: 2px solid #e74c18;
+  border-radius: 5px;
+  color: #e74c18;
+  text-align: center;
+  font-weight: 400;
+  margin: 1vw 0;
+  width: 100%;
+  padding: 0.5vh 1vw;
+  cursor: pointer;
+}
+.input-file:hover {
+  background-color: #133a61;
+}
+.checked-file {
+  display: block;
+  background-color: #133a61;
+  border: 2px solid #66ff00;
+  border-radius: 3px;
+  color: #66ff00;
+  font-weight: 400;
+  margin: 1vw 0;
+  width: 100%;
+  padding: 0.5vh 1vw;
+  cursor: pointer;
+}
+.checked-file::before {
+  content: "";
+  overflow-x: hidden;
+  display: block;
+  height: 1rem;
+  width: 1rem;
+  float: left;
+  text-align: center;
+  background-size: 1rem;
+  background-image: url(../img/check.svg);
+  background-repeat: no-repeat;
+}
+.error-file {
+  display: block;
+  background-color: #790f00;
+  border: 2px solid #ff0000;
+  border-radius: 3px;
+  color: #ff0000;
+  font-weight: 400;
+  margin: 1vw 0;
+  width: 100%;
+  padding: 0.5vh 1vw;
+  cursor: pointer;
 }
 
 /*Desktop*/
@@ -157,6 +211,9 @@ label:focus {
 @media screen and (min-width: 735px) {
   body {
     width: 100vw;
+  }
+  .input-file {
+    overflow-x: hidden;
   }
   .main-form {
     display: flex;
