@@ -104,7 +104,7 @@
 
 .btn-add {
   margin-left: 20px;
-  background-color: #e74c18;
+  background-color: yellow;
   border-radius: 10px;
 }
 
@@ -196,13 +196,4 @@
 }
 #radio30:checked ~ .imag1 {
   margin-left: -105vw;
-}
-select{
-  background-color: #b1e5ee;
-}
-body{
-  background-color: #1dc4e0;
-}
-section{
-  padding-bottom: 80px;
 }
