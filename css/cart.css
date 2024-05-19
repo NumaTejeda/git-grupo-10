@@ -197,3 +197,35 @@
 #radio30:checked ~ .imag1 {
   margin-left: -105vw;
 }
+select {
+  background-color: #b1e5ee;
+}
+body {
+  background-color: #1dc4e0;
+}
+section {
+  padding-bottom: 80px;
+}
+
+@media screen and (max-width: 722px) {
+  .art {
+    flex-direction: column;
+    align-items: center;
+  }
+  .manual-btn {
+    margin-top: 390px;
+  }
+  .titulo-art {
+    margin-top: 30px;
+  }
+  .imag {
+    height: 50vh;
+    width: 50vw;
+    transition: 2s;
+  }
+  .imag1 {
+    height: 50vh;
+    width: 50vw;
+    transition: 2s;
+  }
+}
