@@ -83,12 +83,13 @@ textarea {
   color: var(--color-one);
 }
 textarea {
+  margin-bottom: 2vh;
   padding: 1vh 3vw;
 }
 
 .box-form label {
   position: absolute;
-  z-index: 1111;
+  z-index: 99;
   color: var(--color-two);
   margin-left: 2vw;
   font-weight: 600;
@@ -205,10 +206,31 @@ label:focus {
   padding: 0.5vh 1vw;
   cursor: pointer;
 }
+.msj-error {
+  display: flex;
+  transform: translate(0, -10px);
+  color: red;
+  font-size: 0.7rem;
+  justify-content: end;
+  width: 100%;
+}
+.disable {
+  background-color: var(--color-two);
+  border: 2px solid #394f53;
+  border-radius: 4px;
+  color: #394f53;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+/* @media screen and (min-width: 768px) and (max-width: 800px) and (min-height: 637) and (max-height: 1024px) {
+  .form-container {
+    background-color: #66ff00; //no andaaaaaaaaaaaaaaaaa
+  }
+} */
 
 /*Desktop*/
 
-@media screen and (min-width: 735px) {
+@media screen and (min-width: 883px) {
   body {
     width: 100vw;
   }
@@ -252,6 +274,7 @@ label:focus {
     width: fit-content;
   }
   textarea {
+    margin-bottom: 1vh;
     padding: 1vh 1vw;
   }
   /*!!!!!!!! ---> espacio entre label e inputRadio, CORREGIR!*/
